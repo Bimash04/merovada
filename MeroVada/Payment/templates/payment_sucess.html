@@ -1,0 +1,54 @@
+{% extends 'layout/base.html' %}
+{% block title %}Payment Successful{% endblock %}
+
+{% block body %}
+<section class="bg-white p-12  text-center">
+    <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-green-600 mb-4">Payment Successful!</h2>
+        <p class="text-gray-700 mb-6">Thank you for your payment. Your rental transaction has been successfully completed.</p>
+
+        <div class="mt-6 text-left">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Payment Details</h3>
+            <div class="space-y-2">
+                <p class="text-gray-600">
+                    <span class="font-medium">Payment For:</span> Renting <strong>{{ item.name|default:"Unknown Item" }}</strong>
+                </p>
+                <p class="text-gray-600">
+                    <span class="font-medium">Item Details:</span> {{ item.description|default:"No description available" }}
+                </p>
+                <p class="text-gray-600">
+                    <span class="font-medium">Quantity:</span> {{ quantity|default:"Not specified" }}
+                </p>
+                <p class="text-gray-600">
+                    <span class="font-medium">Amount Paid:</span> Rs {{ total_price|floatformat:2|default:"0.00" }}
+                </p>
+                <p class="text-gray-600">
+                    <span class="font-medium">Rental Plan:</span> 
+                    {{ payment_frequency|title|default:"Not specified" }} ({{ rental_duration|default:"N/A" }} days)
+                </p>
+                <p class="text-gray-600">
+                    <span class="font-medium">Start Date:</span> {{ start_date|date:"F j, Y"|default:"Not specified" }}
+                </p>
+                <p class="text-gray-600">
+                    <span class="font-medium">End Date:</span> {{ end_date|date:"F j, Y"|default:"Not specified" }}
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <a href="{% url 'download_payment_confirmation' order_id %}" 
+                class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                Download payment
+            </a>
+            <a href="{% url 'rental_dashboard' %}" 
+                class="ml-4 bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors">
+                Go to Dashboard
+            </a>
+            <a href="{% url 'home' %}" 
+                class="ml-4 bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-colors">
+                Return Home
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

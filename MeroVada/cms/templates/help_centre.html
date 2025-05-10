@@ -1,0 +1,112 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block title %}Help Center - MeroVada{% endblock %}
+
+{% block body %}
+<div class="container mx-auto px-4 py-10">
+  <!-- Header -->
+  <div class="text-center mb-12">
+    <h1 class="text-4xl font-bold text-gray-800 mb-4">Help Center</h1>
+    <p class="text-gray-500 text-lg">Find answers to your questions or get in touch with us!</p>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="mb-12">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-6">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+        <h3 class="text-lg font-medium text-gray-700 mb-2 cursor-pointer" onclick="toggleFAQ(this)">
+          How do I rent an item? <i class="fas fa-chevron-down text-gray-400 float-right"></i>
+        </h3>
+        <div class="faq-content hidden text-gray-600">
+          Browse the Product Display, select an item, and submit the automated verification form. Choose your rental duration and confirm the dynamic pricing.
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+        <h3 class="text-lg font-medium text-gray-700 mb-2 cursor-pointer" onclick="toggleFAQ(this)">
+          What if an item gets damaged? <i class="fas fa-chevron-down text-gray-400 float-right"></i>
+        </h3>
+        <div class="faq-content hidden text-gray-600">
+          We offer optional insurance coverage for rented items. Check the Insurance Options during checkout.
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+        <h3 class="text-lg font-medium text-gray-700 mb-2 cursor-pointer" onclick="toggleFAQ(this)">
+          How do I track my rentals? <i class="fas fa-chevron-down text-gray-400 float-right"></i>
+        </h3>
+        <div class="faq-content hidden text-gray-600">
+          Use the Analytics Dashboard to monitor your usage and expenses.
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+        <h3 class="text-lg font-medium text-gray-700 mb-2 cursor-pointer" onclick="toggleFAQ(this)">
+          Can I chat with the provider? <i class="fas fa-chevron-down text-gray-400 float-right"></i>
+        </h3>
+        <div class="faq-content hidden text-gray-600">
+          Yes, use the In-App Chat feature to communicate directly.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How-To Guides Section -->
+  <div class="mb-12">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-6">How-To Guides</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+        <h3 class="text-lg font-medium text-gray-700 mb-2">Using Advanced Filters</h3>
+        <p class="text-gray-600">Customize your search by location, price, and availability in the Advanced Filters section.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+        <h3 class="text-lg font-medium text-gray-700 mb-2">Finding Nearby Rentals</h3>
+        <p class="text-gray-600">Check the Map Integration to locate options near you.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+        <h3 class="text-lg font-medium text-gray-700 mb-2">Understanding Pricing</h3>
+        <p class="text-gray-600">Dynamic Pricing adjusts based on rental tenure. You can also negotiate custom pricing with providers.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Support Section -->
+  <div class="bg-white p-8 rounded-lg shadow-md card-hover mb-12">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-6">Contact Support</h2>
+    <p class="text-gray-600 mb-6">Need help? Submit your query below, and we’ll get back to you soon!</p>
+    <form method="post" action="{% url 'contact_support' %}" class="space-y-4">
+      {% csrf_token %}
+      <div>
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-red-400" />
+      </div>
+      <div>
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-red-400" />
+      </div>
+      <div>
+        <textarea name="message" placeholder="Your Question" rows="5" required class="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-red-400"></textarea>
+      </div>
+      <button type="submit" class="btn-primary text-white px-6 py-3 rounded-lg font-medium flex items-center">
+        <i class="fas fa-paper-plane mr-2"></i> Submit
+      </button>
+    </form>
+  </div>
+
+  <!-- Blog Link -->
+  <div class="text-center">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Explore More</h2>
+    <p class="text-gray-600 mb-6">Check out tips and insights on making the most of your rentals!</p>
+    <a href="{% url 'blog_list' %}" class="btn-primary text-white px-6 py-3 rounded-lg font-medium inline-flex items-center">
+      <i class="fas fa-book mr-2"></i> Visit Our Blog
+    </a>
+  </div>
+</div>
+
+<script>
+  function toggleFAQ(element) {
+    const content = element.nextElementSibling;
+    content.classList.toggle('hidden');
+    const icon = element.querySelector('i');
+    icon.classList.toggle('fa-chevron-down');
+    icon.classList.toggle('fa-chevron-up');
+  }
+</script>
+{% endblock %}

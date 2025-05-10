@@ -1,0 +1,27 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block title %}Submit a Blog Post - MeroVada{% endblock %}
+
+{% block body %}
+  <!-- Submit Blog Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Submit a Blog Post</h1>
+      <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+        {% if messages %}
+          {% for message in messages %}
+            <div class="mb-4 p-4 {% if message.tags == 'success' %}bg-green-100 text-green-700{% else %}bg-red-100 text-red-700{% endif %} rounded-lg">
+              {{ message }}
+            </div>
+          {% endfor %}
+        {% endif %}
+        <form method="post">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit" class="btn-primary w-full py-3 rounded-full text-white font-semibold hover:bg-red-600 transition-all">Submit for Approval</button>
+        </form>
+      </div>
+    </div>
+  </section>
+{% endblock %}

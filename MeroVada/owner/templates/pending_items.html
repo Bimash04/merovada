@@ -1,0 +1,15 @@
+<h1>Pending Items</h1>
+<ul>
+    {% for item in items %}
+   
+        <strong>{{ item.name }}</strong> ({{ item.category }}) - {{ item.owner.username }}
+        <br>
+   
+    {% if user.is_staff %}
+    <!-- Show Update Status options only for admins -->
+    <a href="{% url 'update_status' item.id 'Approved' %}">Approve</a>
+    <a href="{% url 'update_status' item.id 'Rejected' %}">Reject</a>
+{% endif %}
+
+    {% endfor %}
+</ul>

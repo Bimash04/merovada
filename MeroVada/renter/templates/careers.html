@@ -1,0 +1,111 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block title %}Careers - MeroVada{% endblock %}
+
+{% block body %}
+  <!-- Careers Hero Section -->
+  <section class="relative bg-gradient-to-r from-red-500 to-red-700 py-20 text-white overflow-hidden">
+    <div class="container mx-auto px-4">
+      <div class="text-center relative z-10">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
+          Careers at MeroVada
+        </h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+          Join our team and help shape the future of the rental marketplace. Be part of a mission-driven company that values innovation, collaboration, and impact.
+        </p>
+      </div>
+      <div class="absolute inset-0 opacity-20">
+        <svg class="w-full h-full" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="currentColor" d="M0,224L80,213.3C160,203,320,181,480,181.3C640,181,800,203,960,197.3C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Positions Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Open Positions</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {% for job in jobs %}
+          <div class="bg-white p-6 rounded-xl shadow-lg card-hover transform transition-transform hover:-translate-y-2">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ job.title }}</h3>
+            <p class="text-gray-500 mb-4">{{ job.location }} | {{ job.employment_type }}</p>
+            <p class="text-gray-600 mb-6">{{ job.description }}</p>
+            <a href="#" class="btn-primary inline-block px-6 py-2 rounded-full text-white font-medium hover:bg-red-600 transition-all">Apply Now</a>
+          </div>
+        {% empty %}
+          <p class="text-center text-gray-600 col-span-full">No open positions at the moment. Check back later!</p>
+        {% endfor %}
+      </div>
+      <p class="text-center text-gray-600 mt-8">
+        Don’t see a role that fits? <a href="mailto:careers@merovada.com" class="text-red-500 hover:underline">Send us your resume</a> for future opportunities.
+      </p>
+    </div>
+  </section>
+<!-- Company Culture Section -->
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Our Culture</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      {% for culture in culture_items %}
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-4">
+            {% if culture.image %}
+              <img src="{{ culture.image.url }}" alt="{{ culture.title }}" class="w-full h-full object-cover rounded-full">
+            {% else %}
+              <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
+                <span class="text-red-500">No Image</span>
+              </div>
+            {% endif %}
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ culture.title }}</h3>
+          <p class="text-gray-600 leading-relaxed">{{ culture.description }}</p>
+        </div>
+      {% empty %}
+        <p class="text-center text-gray-600 col-span-full">No culture information available yet.</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+ <!-- Benefits Section -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Why Work With Us?</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {% for benefit in benefits %}
+        <div class="bg-white p-6 rounded-xl shadow-lg card-hover transform transition-transform hover:-translate-y-2">
+          <div class="w-12 h-12 mx-auto mb-4">
+            {% if benefit.image %}
+              <img src="{{ benefit.image.url }}" alt="{{ benefit.title }}" class="w-full h-full object-cover rounded-full">
+            {% else %}
+              <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                <span class="text-red-500">No Image</span>
+              </div>
+            {% endif %}
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">{{ benefit.title }}</h3>
+          <p class="text-gray-600">{{ benefit.description }}</p>
+        </div>
+      {% empty %}
+        <p class="text-center text-gray-600 col-span-full">No benefits listed yet.</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+  <!-- Call to Action Section -->
+  <section class="py-20 bg-gradient-to-r from-red-600 to-red-800 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Make an Impact?</h2>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
+        Join MeroVada and contribute to a platform that’s transforming lives and communities. Explore our open roles and start your journey today.
+      </p>
+      <a href="#open-positions" class="btn-primary inline-block px-10 py-4 rounded-full text-lg font-semibold bg-white text-red-600 hover:bg-gray-100 transition-all shadow-md">
+        View Open Roles
+      </a>
+    </div>
+  </section>
+{% endblock %}

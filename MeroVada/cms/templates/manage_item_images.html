@@ -1,0 +1,50 @@
+<!-- D:\final year\project\FinalYearProject\MeroVada\cms\templates\manage_item_images.html -->
+{% extends 'base.html' %}
+{% block title %}Manage Item Images{% endblock %}
+{% block body %}
+    <h2>Manage Item Images</h2>
+
+    <!-- Display Messages -->
+    {% if messages %}
+        <div style="text-align: center; margin-bottom: 20px;">
+            {% for message in messages %}
+                <p style="color: {% if message.tags == 'success' %}green{% else %}red{% endif %};">
+                    {{ message }}
+                </p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <a href="{% url 'create_item_image' %}" class="btn">Create New Item Image</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Item</th>
+                <th>Created At</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item_image in all_item_images %}
+                <tr>
+                    <td>
+                        {% if item_image.image %}
+                            <img src="{{ item_image.image.url }}" alt="Item Image" style="max-width: 50px; max-height: 50px;">
+                        {% else %}
+                            N/A
+                        {% endif %}
+                    </td>
+                    <td>{{ item_image.item.name }}</td>
+                    <td>{{ item_image.created_at|date:"Y-m-d" }}</td>
+                    <td class="action-buttons">
+                        <a href="{% url 'update_item_image' item_image.id %}" class="edit">Edit</a>
+                        <a href="{% url 'delete_item_image' item_image.id %}" class="delete">Delete</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr><td colspan="4">No item images available</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

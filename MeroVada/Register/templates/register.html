@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        /* General form styling */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Form label styling */
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        /* Input field styling */
+        input[type="text"], input[type="email"], input[type="password"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus {
+            border-color: #4C9CFE;
+            outline: none;
+        }
+
+        /* Radio button styling */
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        input[type="radio"]:checked + label {
+            font-weight: bold;
+        }
+
+        /* Updated Button Styling */
+        .custom-button {
+            background-color: #EF4444; /* Red-500 */
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 9999px; /* Fully rounded */
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .custom-button:hover {
+            background-color: #DC2626; /* Red-600 */
+            transform: scale(1.05);
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .login-link a {
+            color: #1877F2;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <h2>Register</h2>
+
+        <!-- Render fields manually without error messages -->
+        <div class="mb-4">
+            <label for="id_username">Username</label>
+            {{ form.username }}
+        </div>
+
+        <div class="mb-4">
+            <label for="id_email">Email</label>
+            {{ form.email }}
+        </div>
+
+        <div class="mb-4">
+            <label for="id_password1">Password</label>
+            {{ form.password1 }}
+        </div>
+
+        <div class="mb-4">
+            <label for="id_password2">Confirm Password</label>
+            {{ form.password2 }}
+        </div>
+
+        <div class="mb-4">
+            <label for="id_role">Role</label>
+            <div class="mt-2">
+                {% for radio in form.role %}
+                    <div class="inline-block mr-4">
+                        <label class="inline-flex items-center">
+                            {{ radio.tag }}
+                            <span class="ml-2">{{ radio.choice_label }}</span>
+                        </label>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-6">
+            <button type="submit" class="custom-button">Register</button>
+        </div>
+
+        <div class="login-link">
+            <p>Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,479 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}MeroVada | Home{% endblock %}
+
+{% block body %}
+    <section class="bg-gradient-to-br from-red-700 via-red-600 to-red-500 text-white">
+      <div class="container mx-auto px-6 py-24">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="max-w-lg">
+            <h2 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+              Deals dropping like it's <span class="text-yellow-300">hot!</span>
+            </h2>
+            <p class="mt-6 text-lg md:text-xl opacity-90 leading-relaxed font-light">
+              Limited time price drop on furniture and appliances
+            </p>
+            <button class="mt-10 bg-yellow-300 hover:bg-yellow-400 text-red-700 font-semibold px-10 py-4 rounded-full transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-200 shadow-lg">
+              Rent Now
+            </button>
+          </div>
+    
+          <!-- Image Slider -->
+          <div class="mt-12 md:mt-0 md:ml-12 w-full md:w-1/2 relative">
+            <div class="slider-container overflow-hidden rounded-xl ">
+              <div id="image-slider" class="flex transition-transform duration-500 ease-in-out">
+                <div class="min-w-full flex-shrink-0">
+                  <img src="{% static 'images/car.jpg' %}" alt="Furniture Slide 1" class="h-80 w-full object-contain filter drop-shadow-2xl">
+                </div>
+                <div class="min-w-full flex-shrink-0">
+                  <img src="{% static 'images/images.jpg' %}" alt="Furniture Slide 2" class="h-80 w-full object-contain filter drop-shadow-2xl">
+                </div>
+                <div class="min-w-full flex-shrink-0">
+                  <img src="{% static 'images/ap.png' %}" alt="Furniture Slide 3" class="h-80 w-full object-contain filter drop-shadow-2xl">
+                </div>
+              </div>
+            </div>
+    
+            <!-- Slider Controls -->
+            <button id="img-prev-btn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 rounded-full p-3 shadow-md hover:bg-white transition duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button id="img-next-btn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 rounded-full p-3 shadow-md hover:bg-white transition duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+    
+            <!-- Slider Indicators -->
+            <div class="flex justify-center mt-4 space-x-2">
+              <span class="h-2 w-6 bg-white rounded-full transition-all duration-300"></span>
+              <span class="h-2 w-2 bg-white opacity-50 rounded-full transition-all duration-300"></span>
+              <span class="h-2 w-2 bg-white opacity-50 rounded-full transition-all duration-300"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content with Sidebar Layout -->
+    <div class="container mx-auto px-6 py-20">
+      <div class="flex flex-col lg:flex-row gap-12">
+        <!-- Left Sidebar - Categories -->
+        <div class="w-full lg:w-1/4">
+          <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+            <h3 class="text-xl text-gray-900 font-semibold mb-6 border-b border-gray-200 pb-3">Rent Furniture & Appliances</h3>
+            <div class="space-y-2">
+              {% for category_name in categories %}
+              <a href="{% url 'category_items' category=category_name %}" class="block">
+                <div class="flex items-center p-4 rounded-lg hover:bg-red-50 transition duration-300 cursor-pointer border border-transparent hover:border-red-200 {% if selected_category == category_name %}bg-red-50 border-red-200{% endif %}">
+                  <p class="font-medium text-gray-800">{{ category_name }}</p>
+                </div>
+              </a>
+              {% empty %}
+              <div class="flex items-center p-4 rounded-lg hover:bg-red-50 transition duration-300 cursor-pointer border border-transparent hover:border-red-200">
+                <p class="font-medium text-gray-800">Packages</p>
+              </div>
+              <div class="flex items-center p-4 rounded-lg hover:bg-red-50 transition duration-300 cursor-pointer border border-transparent hover:border-red-200">
+                <p class="font-medium text-gray-800">Furniture</p>
+              </div>
+              <div class="flex items-center p-4 rounded-lg hover:bg-red-50 transition duration-300 cursor-pointer border border-transparent hover:border-red-200">
+                <p class="font-medium text-gray-800">Appliances</p>
+              </div>
+              <div class="flex items-center p-4 rounded-lg hover:bg-red-50 transition duration-300 cursor-pointer border border-transparent hover:border-red-200">
+                <p class="font-medium text-gray-800">Electronics</p>
+              </div>
+              <div class="flex items-center p-4 rounded-lg hover:bg-red-50 transition duration-300 cursor-pointer border border-transparent hover:border-red-200">
+                <p class="font-medium text-gray-800">Bikes</p>
+              </div>
+              <div class="flex items-center p-4 rounded-lg hover:bg-red-50 transition duration-300 cursor-pointer border border-transparent hover:border-red-200">
+                <p class="font-medium text-gray-800">Fitness</p>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Content Area - Products -->
+        <div class="w-full lg:w-3/4">
+          <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+            <div class="flex justify-between items-center mb-8">
+              <h1 class="text-2xl font-bold text-gray-900 tracking-tight">
+                {% if selected_category %}
+                {{ selected_category }} Items
+                {% else %}
+                Recommended Items
+                {% endif %}
+              </h1>
+              <button id="view-all-btn" class="text-red-600 hover:text-red-700 font-medium flex items-center bg-red-50 px-5 py-2 rounded-full hover:bg-red-100 transition duration-300 shadow-sm">
+                View All
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Products Slider -->
+            <div class="relative">
+              <div class="slider-container overflow-hidden">
+                <div id="products-slider" class="flex transition-transform duration-500 ease-in-out">
+                  {% for item in items %}
+                  <div class="min-w-[300px] max-w-[300px] mr-6 bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-gray-100 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden h-52">
+                      <img src="{{ item.image.url }}" alt="{{ item.name }}" class="w-full h-full object-cover transition duration-700 hover:scale-110">
+                   
+                    </div>
+                    <div class="p-5">
+                      <h3 class="text-gray-900 text-lg font-semibold mb-2 truncate">{{ item.name }}</h3>
+                      <p class="text-gray-600 text-sm mb-3 line-clamp-2">{{ item.description }}</p>
+                      <div class="flex justify-between items-center mb-4">
+                        <div>
+                          <span class="text-red-600 font-bold text-xl">Rs. {{ item.price }}</span>
+                         
+                        </div>
+                        <div class="flex items-center">
+                          <div class="flex text-yellow-400">
+                            
+                           
+                          </div>
+                        </div>
+                      </div>
+                      <a href="{% url 'product_desc' item.id %}" 
+                        class="block bg-red-600 text-white text-center font-medium py-3 px-4 rounded-full hover:bg-red-700 transition transform hover:scale-[1.02] text-sm shadow-md">
+                        View Details
+                      </a>
+                    </div>
+                  </div>
+                  {% empty %}
+                  <div class="w-full py-20 flex flex-col items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                    <p class="text-gray-600 mt-6 text-xl font-medium">No items available at the moment.</p>
+                    <p class="text-gray-400 text-sm mt-2">Check back soon for new arrivals!</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              
+              <!-- Slider Controls -->
+              <button id="prev-btn" class="absolute left-0 top-1/2 transform -translate-y-1/2 -ml-6 bg-white/90 rounded-full p-3 shadow-md hover:bg-white transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button id="next-btn" class="absolute right-0 top-1/2 transform -translate-y-1/2 -mr-6 bg-white/90 rounded-full p-3 shadow-md hover:bg-white transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+              
+              <!-- Slider Indicators -->
+              <div class="flex justify-center mt-6 space-x-2">
+                <span class="h-2 w-8 bg-red-600 rounded-full transition-all duration-300"></span>
+                <span class="h-2 w-2 bg-gray-300 rounded-full transition-all duration-300"></span>
+                <span class="h-2 w-2 bg-gray-300 rounded-full transition-all duration-300"></span>
+              </div>
+            </div>
+
+            <!-- Hidden Full Product List -->
+            <div id="all-products" class="hidden mt-10">
+              <h2 class="text-xl font-semibold mb-6 text-gray-900 border-b border-gray-200 pb-3">
+                {% if selected_category %}
+                All {{ selected_category }} Products
+                {% else %}
+                All Products
+                {% endif %}
+              </h2>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {% for item in items %}
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-gray-100 transform hover:-translate-y-2">
+                  <div class="relative overflow-hidden h-52">
+                    <img src="{{ item.image.url }}" alt="{{ item.name }}" class="w-full h-full object-cover transition duration-700 hover:scale-110">
+                    
+                  </div>
+                  <div class="p-5">
+                    <h3 class="text-gray-900 text-lg font-semibold mb-2 truncate">{{ item.name }}</h3>
+                    <p class="text-gray-600 text-sm mb-3 line-clamp-2">{{ item.description }}</p>
+                    <div class="flex justify-between items-center mb-4">
+                      <div>
+                        <span class="text-red-600 font-bold text-xl">Rs. {{ item.price }}</span>
+                        
+                      
+                      </div>
+                    </div>
+                    <a href="{% url 'product_desc' item.id %}" 
+                      class="block bg-red-600 text-white text-center font-medium py-3 px-4 rounded-full hover:bg-red-700 transition transform hover:scale-[1.02] text-sm shadow-md">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+                {% empty %}
+                <div class="col-span-3 py-20 flex flex-col items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                  <p class="text-gray-600 mt-6 text-xl font-medium">No items available at the moment.</p>
+                  <p class="text-gray-400 text-sm mt-2">Check back soon for new arrivals!</p>
+                </div>
+                {% endfor %}
+              </div>
+              <button id="hide-all-btn" class="mt-8 text-red-600 hover:text-red-700 font-medium flex items-center bg-red-50 px-5 py-2 rounded-full hover:bg-red-100 transition duration-300 shadow-sm">
+                Show Less
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bg-gray-50 py-24">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900 tracking-tight">Why rent with MeroVada?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <a href="{% url 'free-delivery' %}" class="block">
+            <div class="bg-white p-8 rounded-2xl shadow-md text-center transform hover:-translate-y-2 transition duration-300 border border-gray-100 cursor-pointer">
+              <div class="bg-blue-100 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg mb-3 text-gray-900">Free Delivery</h3>
+              <p class="text-gray-600 text-sm">Enjoy free delivery and setup right at your doorstep, ensuring a seamless shopping experience.</p>
+            </div>
+          </a>
+          <a href={% url 'quality-control' %} class="block">
+            <div class="bg-white p-8 rounded-2xl shadow-md text-center transform hover:-translate-y-2 transition duration-300 border border-gray-100 cursor-pointer">
+              <div class="bg-blue-100 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg mb-3 text-gray-900">Quality Control</h3>
+              <p class="text-gray-600 text-sm">Every product undergoes rigorous quality checks to meet our high standards.</p>
+            </div>
+          </a>
+          <a href="{% url 'easy-returns' %}" class="block">
+            <div class="bg-white p-8 rounded-2xl shadow-md text-center transform hover:-translate-y-2 transition duration-300 border border-gray-100 cursor-pointer">
+              <div class="bg-blue-100 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg mb-3 text-gray-900">Easy Returns</h3>
+              <p class="text-gray-600 text-sm">Our hassle-free return and exange policy makes shopping worry-free.</p>
+            </div>
+          </a>
+          <a href={% url 'secure-payments' %} class="block">
+            <div class="bg-white p-8 rounded-2xl shadow-md text-center transform hover:-translate-y-2 transition duration-300 border border-gray-100 cursor-pointer">
+              <div class="bg-blue-100 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg mb-3 text-gray-900">Secure Payments</h3>
+              <p class="text-gray-600 text-sm">Shop confidently with our multiple secure payment options.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter Section -->
+    <section class="bg-gradient-to-br from-red-700 via-red-600 to-red-500 text-white py-16">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-3xl font-bold tracking-tight">Stay updated with latest offers</h3>
+            <p class="mt-3 opacity-90 text-lg font-light">Subscribe to our newsletter for exclusive deals and updates</p>
+          </div>
+          <div class="w-full md:w-2/5">
+            <div class="flex">
+              <input type="email" placeholder="Your email address" class="w-full px-6 py-4 rounded-l-full focus:outline-none text-gray-800 shadow-md focus:ring-2 focus:ring-yellow-200">
+              <button class="bg-yellow-300 hover:bg-yellow-400 text-red-700 font-semibold px-8 py-4 rounded-r-full transition duration-300 shadow-md">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Slider functionality
+        const slider = document.getElementById('products-slider');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const slideWidth = 300 + 24; // Product width + margin
+        let position = 0;
+        
+        const slides = slider.children;
+        const maxPosition = Math.max(0, slides.length - 3) * slideWidth;
+        
+        nextBtn.addEventListener('click', function() {
+          if (position < maxPosition) {
+            position += slideWidth;
+            updateSliderPosition();
+          } else {
+            position = 0;
+            updateSliderPosition();
+          }
+        });
+        
+        prevBtn.addEventListener('click', function() {
+          if (position > 0) {
+            position -= slideWidth;
+            updateSliderPosition();
+          } else {
+            position = maxPosition;
+            updateSliderPosition();
+          }
+        });
+        
+        function updateSliderPosition() {
+          slider.style.transform = `translateX(-${position}px)`;
+          const dots = document.querySelectorAll('.flex.justify-center span');
+          const totalSections = Math.ceil(slides.length / 3);
+          const currentSection = Math.floor(position / (maxPosition / Math.max(1, totalSections - 1)));
+          
+          dots.forEach((dot, index) => {
+            if (index === currentSection) {
+              dot.classList.remove('bg-gray-300', 'w-2');
+              dot.classList.add('bg-red-600', 'w-8');
+            } else {
+              dot.classList.remove('bg-red-600', 'w-8');
+              dot.classList.add('bg-gray-300', 'w-2');
+            }
+          });
+        }
+        
+        setInterval(function() {
+          if (position < maxPosition) {
+            position += slideWidth;
+          } else {
+            position = 0;
+          }
+          updateSliderPosition();
+        }, 5000);
+        
+        // View All functionality
+        const viewAllBtn = document.getElementById('view-all-btn');
+        const hideAllBtn = document.getElementById('hide-all-btn');
+        const allProducts = document.getElementById('all-products');
+        const sliderContainer = document.querySelector('.slider-container');
+        const sliderControls = document.querySelectorAll('#prev-btn, #next-btn, .flex.justify-center');
+        
+        viewAllBtn.addEventListener('click', function() {
+          sliderContainer.style.opacity = '0';
+          sliderContainer.style.height = '0';
+          sliderContainer.style.marginBottom = '0';
+          sliderControls.forEach(el => el.style.opacity = '0');
+          
+          setTimeout(function() {
+            sliderContainer.style.display = 'none';
+            sliderControls.forEach(el => el.style.display = 'none');
+            allProducts.classList.remove('hidden');
+            setTimeout(function() {
+              allProducts.style.opacity = '1';
+            }, 50);
+          }, 300);
+          
+          viewAllBtn.style.opacity = '0';
+          setTimeout(function() {
+            viewAllBtn.style.display = 'none';
+          }, 300);
+        });
+        
+        hideAllBtn.addEventListener('click', function() {
+          allProducts.style.opacity = '0';
+          
+          setTimeout(function() {
+            allProducts.classList.add('hidden');
+            sliderContainer.style.display = 'block';
+            sliderControls.forEach(el => el.style.display = 'block');
+            viewAllBtn.style.display = 'flex';
+            
+            setTimeout(function() {
+              sliderContainer.style.opacity = '1';
+              sliderContainer.style.height = 'auto';
+              sliderContainer.style.marginBottom = 'auto';
+              sliderControls.forEach(el => el.style.opacity = '1');
+              viewAllBtn.style.opacity = '1';
+            }, 50);
+          }, 300);
+        });
+        
+        const style = document.createElement('style');
+        style.textContent = `
+          .slider-container, #all-products, #view-all-btn, #prev-btn, #next-btn, .flex.justify-center {
+            transition: opacity 0.3s ease, height 0.3s ease, margin 0.3s ease;
+          }
+          #all-products {
+            opacity: 0;
+          }
+        `;
+        document.head.appendChild(style);
+      });
+
+      async function fetchRecommendations() {
+        const query = document.getElementById("search").value;
+        const response = await fetch(`http://127.0.0.1:8000/api/recommend/?query=${query}`);
+        const data = await response.json();
+
+        let resultDiv = document.getElementById("results");
+        resultDiv.innerHTML = "";
+
+        if (data.length === 0) {
+          resultDiv.innerHTML = "<p>No recommendations found.</p>";
+          return;
+        }
+
+        data.forEach(item => {
+          let div = document.createElement("div");
+          div.innerHTML = `<h3>${item.name}</h3><p>${item.description}</p><p>Price: ${item.price}</p>`;
+          resultDiv.appendChild(div);
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const imageSlider = document.getElementById('image-slider');
+        const imgPrevBtn = document.getElementById('img-prev-btn');
+        const imgNextBtn = document.getElementById('img-next-btn');
+        const imgSlides = imageSlider.children;
+        const totalImgSlides = imgSlides.length;
+        let imgPosition = 0;
+
+        function updateImageSliderPosition() {
+          imageSlider.style.transform = `translateX(-${imgPosition * 100}%)`;
+          const imgDots = document.querySelectorAll('.flex.justify-center span')[0].parentElement.children;
+          imgDots.forEach((dot, index) => {
+            if (index === imgPosition) {
+              dot.classList.remove('opacity-50', 'w-2');
+              dot.classList.add('w-6', 'opacity-100');
+            } else {
+              dot.classList.remove('w-6', 'opacity-100');
+              dot.classList.add('w-2', 'opacity-50');
+            }
+          });
+        }
+
+        imgNextBtn.addEventListener('click', function() {
+          imgPosition = (imgPosition + 1) % totalImgSlides;
+          updateImageSliderPosition();
+        });
+
+        imgPrevBtn.addEventListener('click', function() {
+          imgPosition = (imgPosition - 1 + totalImgSlides) % totalImgSlides;
+          updateImageSliderPosition();
+        });
+
+        setInterval(function() {
+          imgPosition = (imgPosition + 1) % totalImgSlides;
+          updateImageSliderPosition();
+        }, 4000);
+      });
+    </script>
+{% endblock %}

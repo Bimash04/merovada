@@ -1,0 +1,1699 @@
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+HTTP b'GET' request for ['127.0.0.1', 51443]
+HTTP 200 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[mHTTP GET / 200 [0.03, 127.0.0.1:51443][0m
+[mHTTP GET / 200 [0.03, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51443]
+HTTP 304 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[36mHTTP GET /media/item_images/R_WDBZCqD.jpeg 304 [0.00, 127.0.0.1:51443][0m
+[36mHTTP GET /media/item_images/R_WDBZCqD.jpeg 304 [0.00, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51443]
+HTTP 200 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[mHTTP GET / 200 [0.03, 127.0.0.1:51443][0m
+[mHTTP GET / 200 [0.03, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51443]
+HTTP 200 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[mHTTP GET / 200 [0.01, 127.0.0.1:51443][0m
+[mHTTP GET / 200 [0.01, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51443]
+HTTP 200 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[mHTTP GET / 200 [0.03, 127.0.0.1:51443][0m
+[mHTTP GET / 200 [0.03, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51443]
+HTTP 200 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[mHTTP GET /product/8/ 200 [0.03, 127.0.0.1:51443][0m
+[mHTTP GET /product/8/ 200 [0.03, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51443]
+HTTP 304 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[36mHTTP GET /media/item_images/class_digram_of_student.png 304 [0.01, 127.0.0.1:51443][0m
+[36mHTTP GET /media/item_images/class_digram_of_student.png 304 [0.01, 127.0.0.1:51443][0m
+HTTP b'POST' request for ['127.0.0.1', 51443]
+HTTP 302 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[32mHTTP POST /add_to_cart/8/ 302 [0.02, 127.0.0.1:51443][0m
+[32mHTTP POST /add_to_cart/8/ 302 [0.02, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51443]
+HTTP 200 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[mHTTP GET /cart/ 200 [0.02, 127.0.0.1:51443][0m
+[mHTTP GET /cart/ 200 [0.02, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51443]
+HTTP 304 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[36mHTTP GET /media/item_images/images.jpeg 304 [0.00, 127.0.0.1:51443][0m
+[36mHTTP GET /media/item_images/images.jpeg 304 [0.00, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51443]
+HTTP 200 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[mHTTP GET /checkout/8/?quantity=2 200 [0.04, 127.0.0.1:51443][0m
+[mHTTP GET /checkout/8/?quantity=2 200 [0.04, 127.0.0.1:51443][0m
+HTTP b'POST' request for ['127.0.0.1', 51443]
+Starting new HTTPS connection (1): a.khalti.com:443
+https://a.khalti.com:443 "POST /api/v2/epayment/initiate/ HTTP/1.1" 200 None
+Khalti API Response: {'pidx': 'mChHkqa7RYhoMNqey9R8SJ', 'payment_url': 'https://test-pay.khalti.com/?pidx=mChHkqa7RYhoMNqey9R8SJ', 'expires_at': '2025-05-06T20:52:02.129152+05:45', 'expires_in': 1800}
+HTTP 302 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[32mHTTP POST /checkout/8/?quantity=2 302 [0.48, 127.0.0.1:51443][0m
+[32mHTTP POST /checkout/8/?quantity=2 302 [0.48, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51443]
+HTTP 301 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[32mHTTP GET /verify-khalti/13?pidx=mChHkqa7RYhoMNqey9R8SJ&transaction_id=grXYa66AxGLKywxp2vyoAZ&tidx=grXYa66AxGLKywxp2vyoAZ&txnId=grXYa66AxGLKywxp2vyoAZ&amount=200&total_amount=200&mobile=98XXXXX001&status=Completed&purchase_order_id=13&purchase_order_name=car 301 [0.01, 127.0.0.1:51443][0m
+[32mHTTP GET /verify-khalti/13?pidx=mChHkqa7RYhoMNqey9R8SJ&transaction_id=grXYa66AxGLKywxp2vyoAZ&tidx=grXYa66AxGLKywxp2vyoAZ&txnId=grXYa66AxGLKywxp2vyoAZ&amount=200&total_amount=200&mobile=98XXXXX001&status=Completed&purchase_order_id=13&purchase_order_name=car 301 [0.01, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51443]
+Starting new HTTPS connection (1): a.khalti.com:443
+https://a.khalti.com:443 "POST /api/v2/epayment/lookup/ HTTP/1.1" 200 None
+Khalti Verification Response: {'pidx': 'mChHkqa7RYhoMNqey9R8SJ', 'total_amount': 200, 'status': 'Completed', 'transaction_id': 'grXYa66AxGLKywxp2vyoAZ', 'fee': 0, 'refunded': False}
+Preparing invoice email for renter: bimashdulal7890@gmail.com (username: bibek, role: renter)
+Rendering payment_invoice.html
+Failed to send payment invoice email to bimashdulal7890@gmail.com: emails/payment_invoice.html
+Preparing notification for owner: bimash64@gmail.com (username: bimash, role: owner)
+Notification created for owner: bimash
+Rendering owner_payment_notification.html
+Failed to send payment notification to owner bimash64@gmail.com: emails/owner_payment_notification.html
+Rendering payment_sucess.html with context: {'order_id': 13, 'item': <Item: svd>, 'quantity': 2, 'total_price': Decimal('2.00'), 'payment_frequency': 'weekly', 'rental_duration': 7, 'start_date': datetime.date(2025, 5, 6), 'end_date': datetime.date(2025, 5, 13), 'transaction_id': 'grXYa66AxGLKywxp2vyoAZ', 'renter': <CustomUser: bibek>}
+HTTP 200 response started for ['127.0.0.1', 51443]
+HTTP close for ['127.0.0.1', 51443]
+HTTP response complete for ['127.0.0.1', 51443]
+[mHTTP GET /verify-khalti/13/?pidx=mChHkqa7RYhoMNqey9R8SJ&transaction_id=grXYa66AxGLKywxp2vyoAZ&tidx=grXYa66AxGLKywxp2vyoAZ&txnId=grXYa66AxGLKywxp2vyoAZ&amount=200&total_amount=200&mobile=98XXXXX001&status=Completed&purchase_order_id=13&purchase_order_name=car 200 [0.27, 127.0.0.1:51443][0m
+[mHTTP GET /verify-khalti/13/?pidx=mChHkqa7RYhoMNqey9R8SJ&transaction_id=grXYa66AxGLKywxp2vyoAZ&tidx=grXYa66AxGLKywxp2vyoAZ&txnId=grXYa66AxGLKywxp2vyoAZ&amount=200&total_amount=200&mobile=98XXXXX001&status=Completed&purchase_order_id=13&purchase_order_name=car 200 [0.27, 127.0.0.1:51443][0m
+HTTP b'GET' request for ['127.0.0.1', 51558]
+HTTP 200 response started for ['127.0.0.1', 51558]
+HTTP close for ['127.0.0.1', 51558]
+HTTP response complete for ['127.0.0.1', 51558]
+[mHTTP GET /rental_dashboard 200 [0.04, 127.0.0.1:51558][0m
+[mHTTP GET /rental_dashboard 200 [0.04, 127.0.0.1:51558][0m
+HTTP b'GET' request for ['127.0.0.1', 51558]
+HTTP 200 response started for ['127.0.0.1', 51558]
+HTTP close for ['127.0.0.1', 51558]
+HTTP response complete for ['127.0.0.1', 51558]
+[mHTTP GET /rental_dashboard 200 [0.06, 127.0.0.1:51558][0m
+[mHTTP GET /rental_dashboard 200 [0.06, 127.0.0.1:51558][0m
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+HTTP b'GET' request for ['127.0.0.1', 51625]
+HTTP 200 response started for ['127.0.0.1', 51625]
+HTTP close for ['127.0.0.1', 51625]
+HTTP response complete for ['127.0.0.1', 51625]
+[mHTTP GET / 200 [0.04, 127.0.0.1:51625][0m
+[mHTTP GET / 200 [0.04, 127.0.0.1:51625][0m
+HTTP b'GET' request for ['127.0.0.1', 51628]
+HTTP 200 response started for ['127.0.0.1', 51628]
+HTTP close for ['127.0.0.1', 51628]
+HTTP response complete for ['127.0.0.1', 51628]
+[mHTTP GET /register/ 200 [0.02, 127.0.0.1:51628][0m
+[mHTTP GET /register/ 200 [0.02, 127.0.0.1:51628][0m
+HTTP b'GET' request for ['127.0.0.1', 51628]
+HTTP 200 response started for ['127.0.0.1', 51628]
+HTTP close for ['127.0.0.1', 51628]
+HTTP response complete for ['127.0.0.1', 51628]
+[mHTTP GET /admin/item/update/5/ 200 [0.04, 127.0.0.1:51628][0m
+[mHTTP GET /admin/item/update/5/ 200 [0.04, 127.0.0.1:51628][0m
+HTTP b'POST' request for ['127.0.0.1', 51628]
+HTTP 302 response started for ['127.0.0.1', 51628]
+HTTP close for ['127.0.0.1', 51628]
+HTTP response complete for ['127.0.0.1', 51628]
+[32mHTTP POST /admin/item/update/5/ 302 [0.03, 127.0.0.1:51628][0m
+[32mHTTP POST /admin/item/update/5/ 302 [0.03, 127.0.0.1:51628][0m
+HTTP b'GET' request for ['127.0.0.1', 51628]
+HTTP 200 response started for ['127.0.0.1', 51628]
+HTTP close for ['127.0.0.1', 51628]
+HTTP response complete for ['127.0.0.1', 51628]
+[mHTTP GET /admin/items/ 200 [0.02, 127.0.0.1:51628][0m
+[mHTTP GET /admin/items/ 200 [0.02, 127.0.0.1:51628][0m
+HTTP b'GET' request for ['127.0.0.1', 51628]
+HTTP b'GET' request for ['127.0.0.1', 51643]
+HTTP b'GET' request for ['127.0.0.1', 51644]
+HTTP b'GET' request for ['127.0.0.1', 51645]
+HTTP 304 response started for ['127.0.0.1', 51628]
+HTTP close for ['127.0.0.1', 51628]
+HTTP response complete for ['127.0.0.1', 51628]
+[36mHTTP GET /media/item_images/1.jpg 304 [0.01, 127.0.0.1:51628][0m
+[36mHTTP GET /media/item_images/1.jpg 304 [0.01, 127.0.0.1:51628][0m
+HTTP 304 response started for ['127.0.0.1', 51643]
+HTTP close for ['127.0.0.1', 51643]
+HTTP response complete for ['127.0.0.1', 51643]
+[36mHTTP GET /media/item_images/MacBook_Air_-_2.png 304 [0.01, 127.0.0.1:51643][0m
+[36mHTTP GET /media/item_images/MacBook_Air_-_2.png 304 [0.01, 127.0.0.1:51643][0m
+HTTP 304 response started for ['127.0.0.1', 51645]
+HTTP close for ['127.0.0.1', 51645]
+HTTP response complete for ['127.0.0.1', 51645]
+[36mHTTP GET /media/item_images/images.jpeg 304 [0.01, 127.0.0.1:51645][0m
+[36mHTTP GET /media/item_images/images.jpeg 304 [0.01, 127.0.0.1:51645][0m
+HTTP 304 response started for ['127.0.0.1', 51644]
+HTTP close for ['127.0.0.1', 51644]
+HTTP response complete for ['127.0.0.1', 51644]
+[36mHTTP GET /media/item_images/R_WDBZCqD.jpeg 304 [0.01, 127.0.0.1:51644][0m
+[36mHTTP GET /media/item_images/R_WDBZCqD.jpeg 304 [0.01, 127.0.0.1:51644][0m
+HTTP b'GET' request for ['127.0.0.1', 51628]
+HTTP 200 response started for ['127.0.0.1', 51628]
+HTTP close for ['127.0.0.1', 51628]
+HTTP response complete for ['127.0.0.1', 51628]
+[mHTTP GET /admin/item/update/5/ 200 [0.03, 127.0.0.1:51628][0m
+[mHTTP GET /admin/item/update/5/ 200 [0.03, 127.0.0.1:51628][0m
+HTTP b'POST' request for ['127.0.0.1', 51628]
+HTTP 302 response started for ['127.0.0.1', 51628]
+HTTP close for ['127.0.0.1', 51628]
+HTTP response complete for ['127.0.0.1', 51628]
+[32mHTTP POST /admin/item/update/5/ 302 [0.02, 127.0.0.1:51628][0m
+[32mHTTP POST /admin/item/update/5/ 302 [0.02, 127.0.0.1:51628][0m
+HTTP b'GET' request for ['127.0.0.1', 51628]
+HTTP 200 response started for ['127.0.0.1', 51628]
+HTTP close for ['127.0.0.1', 51628]
+HTTP response complete for ['127.0.0.1', 51628]
+[mHTTP GET /admin/items/ 200 [0.02, 127.0.0.1:51628][0m
+[mHTTP GET /admin/items/ 200 [0.02, 127.0.0.1:51628][0m
+HTTP b'GET' request for ['127.0.0.1', 51625]
+HTTP 200 response started for ['127.0.0.1', 51625]
+HTTP close for ['127.0.0.1', 51625]
+HTTP response complete for ['127.0.0.1', 51625]
+[mHTTP GET / 200 [0.03, 127.0.0.1:51625][0m
+[mHTTP GET / 200 [0.03, 127.0.0.1:51625][0m
+HTTP b'GET' request for ['127.0.0.1', 51625]
+HTTP 200 response started for ['127.0.0.1', 51625]
+HTTP close for ['127.0.0.1', 51625]
+HTTP response complete for ['127.0.0.1', 51625]
+[mHTTP GET / 200 [0.03, 127.0.0.1:51625][0m
+[mHTTP GET / 200 [0.03, 127.0.0.1:51625][0m
+HTTP b'GET' request for ['127.0.0.1', 51625]
+HTTP 200 response started for ['127.0.0.1', 51625]
+HTTP close for ['127.0.0.1', 51625]
+HTTP response complete for ['127.0.0.1', 51625]
+[mHTTP GET / 200 [0.02, 127.0.0.1:51625][0m
+[mHTTP GET / 200 [0.02, 127.0.0.1:51625][0m
+HTTP b'GET' request for ['127.0.0.1', 51625]
+HTTP 200 response started for ['127.0.0.1', 51625]
+HTTP close for ['127.0.0.1', 51625]
+HTTP response complete for ['127.0.0.1', 51625]
+[mHTTP GET /cart/ 200 [0.04, 127.0.0.1:51625][0m
+[mHTTP GET /cart/ 200 [0.04, 127.0.0.1:51625][0m
+HTTP b'GET' request for ['127.0.0.1', 51625]
+HTTP b'GET' request for ['127.0.0.1', 51626]
+HTTP 304 response started for ['127.0.0.1', 51625]
+HTTP close for ['127.0.0.1', 51625]
+HTTP response complete for ['127.0.0.1', 51625]
+[36mHTTP GET /media/item_images/images.jpeg 304 [0.01, 127.0.0.1:51625][0m
+[36mHTTP GET /media/item_images/images.jpeg 304 [0.01, 127.0.0.1:51625][0m
+HTTP 304 response started for ['127.0.0.1', 51626]
+HTTP close for ['127.0.0.1', 51626]
+HTTP response complete for ['127.0.0.1', 51626]
+[36mHTTP GET /media/item_images/R_WDBZCqD.jpeg 304 [0.01, 127.0.0.1:51626][0m
+[36mHTTP GET /media/item_images/R_WDBZCqD.jpeg 304 [0.01, 127.0.0.1:51626][0m
+HTTP b'GET' request for ['127.0.0.1', 51626]
+HTTP 200 response started for ['127.0.0.1', 51626]
+HTTP close for ['127.0.0.1', 51626]
+HTTP response complete for ['127.0.0.1', 51626]
+[mHTTP GET /checkout/7/?quantity=1 200 [0.04, 127.0.0.1:51626][0m
+[mHTTP GET /checkout/7/?quantity=1 200 [0.04, 127.0.0.1:51626][0m
+HTTP b'POST' request for ['127.0.0.1', 51626]
+Starting new HTTPS connection (1): a.khalti.com:443
+https://a.khalti.com:443 "POST /api/v2/epayment/initiate/ HTTP/1.1" 200 None
+Khalti API Response: {'pidx': 'uAzPf3pwe4TGbgrUZ3JwbP', 'payment_url': 'https://test-pay.khalti.com/?pidx=uAzPf3pwe4TGbgrUZ3JwbP', 'expires_at': '2025-05-06T20:56:02.404791+05:45', 'expires_in': 1800}
+HTTP 302 response started for ['127.0.0.1', 51626]
+HTTP close for ['127.0.0.1', 51626]
+HTTP response complete for ['127.0.0.1', 51626]
+[32mHTTP POST /checkout/7/?quantity=1 302 [3.50, 127.0.0.1:51626][0m
+[32mHTTP POST /checkout/7/?quantity=1 302 [3.50, 127.0.0.1:51626][0m
+HTTP b'GET' request for ['127.0.0.1', 51626]
+Starting new HTTPS connection (1): a.khalti.com:443
+https://a.khalti.com:443 "POST /api/v2/epayment/lookup/ HTTP/1.1" 200 None
+Khalti Verification Response: {'pidx': 'uAzPf3pwe4TGbgrUZ3JwbP', 'total_amount': 1000, 'status': 'Completed', 'transaction_id': '3UEeXu2ihkX9Fs7zhuHzFm', 'fee': 30, 'refunded': False}
+Preparing invoice email for renter: bimashdulal7890@gmail.com (username: bibek, role: renter)
+Rendering payment_invoice.html
+Sending invoice email to bimashdulal7890@gmail.com
+Payment invoice email sent to renter: bimashdulal7890@gmail.com
+Preparing notification for owner: bimash64@gmail.com (username: bimash, role: owner)
+Notification created for owner: bimash
+Rendering owner_payment_notification.html
+Sending notification email to <django.core.mail.message.EmailMultiAlternatives object at 0x00000283439FA6D0>
+Payment notification email sent to owner: <django.core.mail.message.EmailMultiAlternatives object at 0x00000283439FA6D0>
+Rendering payment_sucess.html with context: {'order_id': 14, 'item': <Item: cw>, 'quantity': 1, 'total_price': Decimal('10.00'), 'payment_frequency': 'weekly', 'rental_duration': 7, 'start_date': datetime.date(2025, 5, 6), 'end_date': datetime.date(2025, 5, 13), 'transaction_id': '3UEeXu2ihkX9Fs7zhuHzFm', 'renter': <CustomUser: bibek>}
+HTTP 200 response started for ['127.0.0.1', 51626]
+HTTP close for ['127.0.0.1', 51626]
+HTTP response complete for ['127.0.0.1', 51626]
+[mHTTP GET /verify-khalti/14/?status=Completed&t=txn&idx=3UEeXu2ihkX9Fs7zhuHzFm&token=AjyHJWe3qYLW6k6wPQLGdP&bank_reference=None&amount=1000&mobile=98XXXXX000&transaction_id=3UEeXu2ihkX9Fs7zhuHzFm&tidx=3UEeXu2ihkX9Fs7zhuHzFm&total_amount=1000&purchase_order_id=14&purchase_order_name=cw&pidx=uAzPf3pwe4TGbgrUZ3JwbP 200 [7.78, 127.0.0.1:51626][0m
+[mHTTP GET /verify-khalti/14/?status=Completed&t=txn&idx=3UEeXu2ihkX9Fs7zhuHzFm&token=AjyHJWe3qYLW6k6wPQLGdP&bank_reference=None&amount=1000&mobile=98XXXXX000&transaction_id=3UEeXu2ihkX9Fs7zhuHzFm&tidx=3UEeXu2ihkX9Fs7zhuHzFm&total_amount=1000&purchase_order_id=14&purchase_order_name=cw&pidx=uAzPf3pwe4TGbgrUZ3JwbP 200 [7.78, 127.0.0.1:51626][0m
+HTTP b'GET' request for ['127.0.0.1', 51757]
+HTTP 200 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[mHTTP GET / 200 [0.02, 127.0.0.1:51757][0m
+[mHTTP GET / 200 [0.02, 127.0.0.1:51757][0m
+HTTP b'GET' request for ['127.0.0.1', 51757]
+HTTP 200 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[mHTTP GET /cart/ 200 [0.03, 127.0.0.1:51757][0m
+[mHTTP GET /cart/ 200 [0.03, 127.0.0.1:51757][0m
+HTTP b'POST' request for ['127.0.0.1', 51757]
+HTTP 302 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[32mHTTP POST /logout/ 302 [0.03, 127.0.0.1:51757][0m
+[32mHTTP POST /logout/ 302 [0.03, 127.0.0.1:51757][0m
+HTTP b'GET' request for ['127.0.0.1', 51757]
+HTTP 200 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[mHTTP GET /login/ 200 [0.01, 127.0.0.1:51757][0m
+[mHTTP GET /login/ 200 [0.01, 127.0.0.1:51757][0m
+HTTP b'GET' request for ['127.0.0.1', 51757]
+HTTP 302 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[32mHTTP GET /cart/ 302 [0.01, 127.0.0.1:51757][0m
+[32mHTTP GET /cart/ 302 [0.01, 127.0.0.1:51757][0m
+HTTP b'GET' request for ['127.0.0.1', 51757]
+HTTP 200 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[mHTTP GET /login/?next=/cart/ 200 [0.01, 127.0.0.1:51757][0m
+[mHTTP GET /login/?next=/cart/ 200 [0.01, 127.0.0.1:51757][0m
+HTTP b'GET' request for ['127.0.0.1', 51757]
+HTTP 200 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[mHTTP GET / 200 [0.02, 127.0.0.1:51757][0m
+[mHTTP GET / 200 [0.02, 127.0.0.1:51757][0m
+HTTP b'GET' request for ['127.0.0.1', 51757]
+HTTP 302 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[32mHTTP GET /chat/ 302 [0.00, 127.0.0.1:51757][0m
+[32mHTTP GET /chat/ 302 [0.00, 127.0.0.1:51757][0m
+HTTP b'GET' request for ['127.0.0.1', 51757]
+HTTP 200 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[mHTTP GET /login/?next=/chat/ 200 [0.01, 127.0.0.1:51757][0m
+[mHTTP GET /login/?next=/chat/ 200 [0.01, 127.0.0.1:51757][0m
+HTTP b'GET' request for ['127.0.0.1', 51757]
+HTTP 302 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[32mHTTP GET /owner-dashboard/ 302 [0.01, 127.0.0.1:51757][0m
+[32mHTTP GET /owner-dashboard/ 302 [0.01, 127.0.0.1:51757][0m
+HTTP b'GET' request for ['127.0.0.1', 51757]
+HTTP 200 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[mHTTP GET /login/?next=/owner-dashboard/ 200 [0.01, 127.0.0.1:51757][0m
+[mHTTP GET /login/?next=/owner-dashboard/ 200 [0.01, 127.0.0.1:51757][0m
+HTTP b'GET' request for ['127.0.0.1', 51757]
+HTTP 200 response started for ['127.0.0.1', 51757]
+HTTP close for ['127.0.0.1', 51757]
+HTTP response complete for ['127.0.0.1', 51757]
+[mHTTP GET /login/?next=/owner-dashboard/ 200 [0.01, 127.0.0.1:51757][0m
+[mHTTP GET /login/?next=/owner-dashboard/ 200 [0.01, 127.0.0.1:51757][0m
+HTTP b'GET' request for ['127.0.0.1', 51872]
+HTTP 200 response started for ['127.0.0.1', 51872]
+HTTP close for ['127.0.0.1', 51872]
+HTTP response complete for ['127.0.0.1', 51872]
+[mHTTP GET /notifications/ 200 [0.03, 127.0.0.1:51872][0m
+[mHTTP GET /notifications/ 200 [0.03, 127.0.0.1:51872][0m
+HTTP b'GET' request for ['127.0.0.1', 51872]
+HTTP 301 response started for ['127.0.0.1', 51872]
+HTTP close for ['127.0.0.1', 51872]
+HTTP response complete for ['127.0.0.1', 51872]
+[32mHTTP GET /verify-khalti/14 301 [0.01, 127.0.0.1:51872][0m
+[32mHTTP GET /verify-khalti/14 301 [0.01, 127.0.0.1:51872][0m
+HTTP b'GET' request for ['127.0.0.1', 51872]
+Preparing invoice email for renter: bimashdulal7890@gmail.com (username: bibek, role: renter)
+Rendering payment_invoice.html
+Sending invoice email to bimashdulal7890@gmail.com
+HTTP disconnect for ['127.0.0.1', 51872]
+HTTP b'GET' request for ['127.0.0.1', 51873]
+HTTP 200 response started for ['127.0.0.1', 51873]
+HTTP close for ['127.0.0.1', 51873]
+HTTP response complete for ['127.0.0.1', 51873]
+[mHTTP GET /checkout/7/?quantity=1 200 [0.01, 127.0.0.1:51873][0m
+[mHTTP GET /checkout/7/?quantity=1 200 [0.01, 127.0.0.1:51873][0m
+Payment invoice email sent to renter: bimashdulal7890@gmail.com
+Preparing notification for owner: bimash64@gmail.com (username: bimash, role: owner)
+Notification created for owner: bimash
+Rendering owner_payment_notification.html
+Sending notification email to <django.core.mail.message.EmailMultiAlternatives object at 0x0000028343255C90>
+HTTP b'GET' request for ['127.0.0.1', 51873]
+HTTP 200 response started for ['127.0.0.1', 51873]
+HTTP close for ['127.0.0.1', 51873]
+HTTP response complete for ['127.0.0.1', 51873]
+[mHTTP GET / 200 [0.04, 127.0.0.1:51873][0m
+[mHTTP GET / 200 [0.04, 127.0.0.1:51873][0m
+Payment notification email sent to owner: <django.core.mail.message.EmailMultiAlternatives object at 0x0000028343255C90>
+Rendering payment_sucess.html with context: {'order_id': 14, 'item': <Item: cw>, 'quantity': 1, 'total_price': Decimal('10.00'), 'payment_frequency': 'weekly', 'rental_duration': 7, 'start_date': datetime.date(2025, 5, 6), 'end_date': datetime.date(2025, 5, 13), 'transaction_id': '3UEeXu2ihkX9Fs7zhuHzFm', 'renter': <CustomUser: bibek>}
+HTTP b'GET' request for ['127.0.0.1', 51873]
+HTTP 200 response started for ['127.0.0.1', 51873]
+HTTP close for ['127.0.0.1', 51873]
+HTTP response complete for ['127.0.0.1', 51873]
+[mHTTP GET /cart/ 200 [0.01, 127.0.0.1:51873][0m
+[mHTTP GET /cart/ 200 [0.01, 127.0.0.1:51873][0m
+HTTP b'GET' request for ['127.0.0.1', 51873]
+HTTP 304 response started for ['127.0.0.1', 51873]
+HTTP close for ['127.0.0.1', 51873]
+HTTP response complete for ['127.0.0.1', 51873]
+[36mHTTP GET /media/item_images/R_WDBZCqD.jpeg 304 [0.00, 127.0.0.1:51873][0m
+[36mHTTP GET /media/item_images/R_WDBZCqD.jpeg 304 [0.00, 127.0.0.1:51873][0m
+D:\final year\project\FinalYearProject\MeroVada\chat\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\chat\models.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\models.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\final year\project\FinalYearProject\MeroVada\chat\models.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\models.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\chat\consumers.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\consumers.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\chat\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\final year\project\FinalYearProject\MeroVada\chat\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Using selector: SelectSelector
+Using selector: SelectSelector
+Using selector: SelectSelector
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+HTTP b'GET' request for ['127.0.0.1', 52123]
+HTTP 200 response started for ['127.0.0.1', 52123]
+HTTP close for ['127.0.0.1', 52123]
+HTTP response complete for ['127.0.0.1', 52123]
+[mHTTP GET /login/?next=/owner-dashboard/ 200 [0.03, 127.0.0.1:52123][0m
+[mHTTP GET /login/?next=/owner-dashboard/ 200 [0.03, 127.0.0.1:52123][0m
+HTTP b'POST' request for ['127.0.0.1', 52123]
+HTTP 302 response started for ['127.0.0.1', 52123]
+HTTP close for ['127.0.0.1', 52123]
+HTTP response complete for ['127.0.0.1', 52123]
+[32mHTTP POST /login/?next=/owner-dashboard/ 302 [0.29, 127.0.0.1:52123][0m
+[32mHTTP POST /login/?next=/owner-dashboard/ 302 [0.29, 127.0.0.1:52123][0m
+HTTP b'GET' request for ['127.0.0.1', 52123]
+HTTP 200 response started for ['127.0.0.1', 52123]
+HTTP close for ['127.0.0.1', 52123]
+HTTP response complete for ['127.0.0.1', 52123]
+[mHTTP GET /owner-dashboard/ 200 [0.03, 127.0.0.1:52123][0m
+[mHTTP GET /owner-dashboard/ 200 [0.03, 127.0.0.1:52123][0m
+HTTP b'GET' request for ['127.0.0.1', 52123]
+HTTP 200 response started for ['127.0.0.1', 52123]
+HTTP close for ['127.0.0.1', 52123]
+HTTP response complete for ['127.0.0.1', 52123]
+[mHTTP GET / 200 [0.04, 127.0.0.1:52123][0m
+[mHTTP GET / 200 [0.04, 127.0.0.1:52123][0m
+HTTP b'GET' request for ['127.0.0.1', 52123]
+Internal Server Error: /chat/
+Traceback (most recent call last):
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bimas\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\MeroVada\chat\views.py", line 131, in chat_list
+    return render(request, 'chat_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\defaulttags.py", line 976, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 148: 'else', expected 'endif'. Did you forget to register or load this tag?
+Internal Server Error: /chat/
+Traceback (most recent call last):
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bimas\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\MeroVada\chat\views.py", line 131, in chat_list
+    return render(request, 'chat_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\defaulttags.py", line 976, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\final year\project\FinalYearProject\env\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 148: 'else', expected 'endif'. Did you forget to register or load this tag?
+HTTP 500 response started for ['127.0.0.1', 52123]
+HTTP response chunk for ['127.0.0.1', 52123]
+HTTP response chunk for ['127.0.0.1', 52123]
+HTTP response chunk for ['127.0.0.1', 52123]
+HTTP close for ['127.0.0.1', 52123]
+HTTP response complete for ['127.0.0.1', 52123]
+[35;1mHTTP GET /chat/ 500 [0.29, 127.0.0.1:52123][0m
+[35;1mHTTP GET /chat/ 500 [0.29, 127.0.0.1:52123][0m
+HTTP b'GET' request for ['127.0.0.1', 52170]
+HTTP 200 response started for ['127.0.0.1', 52170]
+HTTP close for ['127.0.0.1', 52170]
+HTTP response complete for ['127.0.0.1', 52170]
+[mHTTP GET /chat/ 200 [0.06, 127.0.0.1:52170][0m
+[mHTTP GET /chat/ 200 [0.06, 127.0.0.1:52170][0m
+HTTP b'GET' request for ['127.0.0.1', 52170]
+HTTP 200 response started for ['127.0.0.1', 52170]
+HTTP close for ['127.0.0.1', 52170]
+HTTP response complete for ['127.0.0.1', 52170]
+[mHTTP GET /chat/3/ 200 [0.04, 127.0.0.1:52170][0m
+[mHTTP GET /chat/3/ 200 [0.04, 127.0.0.1:52170][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52184]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52184]
+Upgraded connection ['127.0.0.1', 52184] to WebSocket
+WebSocket ['127.0.0.1', 52184] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52184]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52184]
+WebSocket ['127.0.0.1', 52184] accepted by application
+HTTP b'GET' request for ['127.0.0.1', 52237]
+HTTP 200 response started for ['127.0.0.1', 52237]
+HTTP close for ['127.0.0.1', 52237]
+HTTP response complete for ['127.0.0.1', 52237]
+[mHTTP GET /chat/3/ 200 [0.06, 127.0.0.1:52237][0m
+[mHTTP GET /chat/3/ 200 [0.06, 127.0.0.1:52237][0m
+WebSocket closed for ['127.0.0.1', 52184]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52184]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52184]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52242]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52242]
+Upgraded connection ['127.0.0.1', 52242] to WebSocket
+WebSocket ['127.0.0.1', 52242] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52242]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52242]
+WebSocket ['127.0.0.1', 52242] accepted by application
+HTTP b'GET' request for ['127.0.0.1', 52237]
+HTTP 200 response started for ['127.0.0.1', 52237]
+HTTP close for ['127.0.0.1', 52237]
+HTTP response complete for ['127.0.0.1', 52237]
+[mHTTP GET / 200 [0.03, 127.0.0.1:52237][0m
+[mHTTP GET / 200 [0.03, 127.0.0.1:52237][0m
+WebSocket closed for ['127.0.0.1', 52242]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52242]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52242]
+HTTP b'GET' request for ['127.0.0.1', 52237]
+HTTP 200 response started for ['127.0.0.1', 52237]
+HTTP close for ['127.0.0.1', 52237]
+HTTP response complete for ['127.0.0.1', 52237]
+[mHTTP GET /chat/ 200 [0.03, 127.0.0.1:52237][0m
+[mHTTP GET /chat/ 200 [0.03, 127.0.0.1:52237][0m
+HTTP b'GET' request for ['127.0.0.1', 52237]
+HTTP 200 response started for ['127.0.0.1', 52237]
+HTTP close for ['127.0.0.1', 52237]
+HTTP response complete for ['127.0.0.1', 52237]
+[mHTTP GET /chat/3/ 200 [0.04, 127.0.0.1:52237][0m
+[mHTTP GET /chat/3/ 200 [0.04, 127.0.0.1:52237][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52258]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52258]
+Upgraded connection ['127.0.0.1', 52258] to WebSocket
+WebSocket ['127.0.0.1', 52258] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52258]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52258]
+WebSocket ['127.0.0.1', 52258] accepted by application
+HTTP b'GET' request for ['127.0.0.1', 52295]
+HTTP 200 response started for ['127.0.0.1', 52295]
+HTTP close for ['127.0.0.1', 52295]
+HTTP response complete for ['127.0.0.1', 52295]
+[mHTTP GET /chat/3/ 200 [0.04, 127.0.0.1:52295][0m
+[mHTTP GET /chat/3/ 200 [0.04, 127.0.0.1:52295][0m
+WebSocket closed for ['127.0.0.1', 52258]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52258]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52258]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52304]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52304]
+Upgraded connection ['127.0.0.1', 52304] to WebSocket
+WebSocket ['127.0.0.1', 52304] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52304]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52304]
+WebSocket ['127.0.0.1', 52304] accepted by application
+HTTP b'GET' request for ['127.0.0.1', 52311]
+HTTP 200 response started for ['127.0.0.1', 52311]
+HTTP close for ['127.0.0.1', 52311]
+HTTP response complete for ['127.0.0.1', 52311]
+[mHTTP GET /login/ 200 [0.03, 127.0.0.1:52311][0m
+[mHTTP GET /login/ 200 [0.03, 127.0.0.1:52311][0m
+HTTP b'POST' request for ['127.0.0.1', 52311]
+HTTP 302 response started for ['127.0.0.1', 52311]
+HTTP close for ['127.0.0.1', 52311]
+HTTP response complete for ['127.0.0.1', 52311]
+[32mHTTP POST /login/ 302 [0.27, 127.0.0.1:52311][0m
+[32mHTTP POST /login/ 302 [0.27, 127.0.0.1:52311][0m
+HTTP b'GET' request for ['127.0.0.1', 52311]
+HTTP 200 response started for ['127.0.0.1', 52311]
+HTTP close for ['127.0.0.1', 52311]
+HTTP response complete for ['127.0.0.1', 52311]
+[mHTTP GET / 200 [0.02, 127.0.0.1:52311][0m
+[mHTTP GET / 200 [0.02, 127.0.0.1:52311][0m
+HTTP b'GET' request for ['127.0.0.1', 52311]
+HTTP 304 response started for ['127.0.0.1', 52311]
+HTTP close for ['127.0.0.1', 52311]
+HTTP response complete for ['127.0.0.1', 52311]
+[36mHTTP GET /static/images/car.jpg 304 [0.00, 127.0.0.1:52311][0m
+[36mHTTP GET /static/images/car.jpg 304 [0.00, 127.0.0.1:52311][0m
+HTTP b'GET' request for ['127.0.0.1', 52311]
+HTTP b'GET' request for ['127.0.0.1', 52319]
+HTTP 304 response started for ['127.0.0.1', 52311]
+HTTP close for ['127.0.0.1', 52311]
+HTTP response complete for ['127.0.0.1', 52311]
+[36mHTTP GET /static/images/images.jpg 304 [0.00, 127.0.0.1:52311][0m
+[36mHTTP GET /static/images/images.jpg 304 [0.00, 127.0.0.1:52311][0m
+HTTP 304 response started for ['127.0.0.1', 52319]
+HTTP close for ['127.0.0.1', 52319]
+HTTP response complete for ['127.0.0.1', 52319]
+[36mHTTP GET /static/images/ap.png 304 [0.00, 127.0.0.1:52319][0m
+[36mHTTP GET /static/images/ap.png 304 [0.00, 127.0.0.1:52319][0m
+HTTP b'GET' request for ['127.0.0.1', 52311]
+HTTP 200 response started for ['127.0.0.1', 52311]
+HTTP close for ['127.0.0.1', 52311]
+HTTP response complete for ['127.0.0.1', 52311]
+[mHTTP GET /chat/ 200 [0.04, 127.0.0.1:52311][0m
+[mHTTP GET /chat/ 200 [0.04, 127.0.0.1:52311][0m
+HTTP b'GET' request for ['127.0.0.1', 52311]
+HTTP 200 response started for ['127.0.0.1', 52311]
+HTTP close for ['127.0.0.1', 52311]
+HTTP response complete for ['127.0.0.1', 52311]
+[mHTTP GET /chat/2/ 200 [0.04, 127.0.0.1:52311][0m
+[mHTTP GET /chat/2/ 200 [0.04, 127.0.0.1:52311][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52326]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52326]
+Upgraded connection ['127.0.0.1', 52326] to WebSocket
+WebSocket ['127.0.0.1', 52326] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52326]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52326]
+WebSocket ['127.0.0.1', 52326] accepted by application
+HTTP b'GET' request for ['127.0.0.1', 52346]
+HTTP 200 response started for ['127.0.0.1', 52346]
+HTTP close for ['127.0.0.1', 52346]
+HTTP response complete for ['127.0.0.1', 52346]
+[mHTTP GET /chat/3/ 200 [0.08, 127.0.0.1:52346][0m
+[mHTTP GET /chat/3/ 200 [0.08, 127.0.0.1:52346][0m
+WebSocket closed for ['127.0.0.1', 52304]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52304]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52304]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52353]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52353]
+Upgraded connection ['127.0.0.1', 52353] to WebSocket
+WebSocket ['127.0.0.1', 52353] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52353]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52353]
+WebSocket ['127.0.0.1', 52353] accepted by application
+WebSocket incoming frame on ['127.0.0.1', 52353]
+Sent WebSocket packet to client for ['127.0.0.1', 52353]
+Sent WebSocket packet to client for ['127.0.0.1', 52326]
+WebSocket closed for ['127.0.0.1', 52326]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52326]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52326]
+HTTP b'GET' request for ['127.0.0.1', 52364]
+HTTP 200 response started for ['127.0.0.1', 52364]
+HTTP close for ['127.0.0.1', 52364]
+HTTP response complete for ['127.0.0.1', 52364]
+[mHTTP GET /chat/2/ 200 [0.03, 127.0.0.1:52364][0m
+[mHTTP GET /chat/2/ 200 [0.03, 127.0.0.1:52364][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52366]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52366]
+Upgraded connection ['127.0.0.1', 52366] to WebSocket
+WebSocket ['127.0.0.1', 52366] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52366]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52366]
+WebSocket ['127.0.0.1', 52366] accepted by application
+WebSocket incoming frame on ['127.0.0.1', 52366]
+WebSocket closed for ['127.0.0.1', 52366]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52366]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52366]
+HTTP b'GET' request for ['127.0.0.1', 52364]
+HTTP 200 response started for ['127.0.0.1', 52364]
+HTTP close for ['127.0.0.1', 52364]
+HTTP response complete for ['127.0.0.1', 52364]
+[mHTTP GET /chat/2/? 200 [0.04, 127.0.0.1:52364][0m
+[mHTTP GET /chat/2/? 200 [0.04, 127.0.0.1:52364][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52372]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52372]
+Upgraded connection ['127.0.0.1', 52372] to WebSocket
+Sent WebSocket packet to client for ['127.0.0.1', 52353]
+WebSocket ['127.0.0.1', 52372] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52372]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52372]
+WebSocket ['127.0.0.1', 52372] accepted by application
+HTTP b'GET' request for ['127.0.0.1', 52346]
+HTTP 200 response started for ['127.0.0.1', 52346]
+HTTP close for ['127.0.0.1', 52346]
+HTTP response complete for ['127.0.0.1', 52346]
+[mHTTP GET /chat/3/ 200 [0.08, 127.0.0.1:52346][0m
+[mHTTP GET /chat/3/ 200 [0.08, 127.0.0.1:52346][0m
+WebSocket closed for ['127.0.0.1', 52353]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52353]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52353]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52392]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52392]
+Upgraded connection ['127.0.0.1', 52392] to WebSocket
+WebSocket ['127.0.0.1', 52392] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52392]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52392]
+WebSocket ['127.0.0.1', 52392] accepted by application
+HTTP b'GET' request for ['127.0.0.1', 52346]
+HTTP 200 response started for ['127.0.0.1', 52346]
+HTTP close for ['127.0.0.1', 52346]
+HTTP response complete for ['127.0.0.1', 52346]
+[mHTTP GET /chat/3/ 200 [0.02, 127.0.0.1:52346][0m
+[mHTTP GET /chat/3/ 200 [0.02, 127.0.0.1:52346][0m
+WebSocket closed for ['127.0.0.1', 52392]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52392]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52392]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52396]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52396]
+Upgraded connection ['127.0.0.1', 52396] to WebSocket
+WebSocket ['127.0.0.1', 52396] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52396]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52396]
+WebSocket ['127.0.0.1', 52396] accepted by application
+HTTP b'GET' request for ['127.0.0.1', 52346]
+HTTP 200 response started for ['127.0.0.1', 52346]
+HTTP close for ['127.0.0.1', 52346]
+HTTP response complete for ['127.0.0.1', 52346]
+[mHTTP GET /chat/3/ 200 [0.05, 127.0.0.1:52346][0m
+[mHTTP GET /chat/3/ 200 [0.05, 127.0.0.1:52346][0m
+WebSocket closed for ['127.0.0.1', 52396]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52396]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52396]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52400]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52400]
+Upgraded connection ['127.0.0.1', 52400] to WebSocket
+WebSocket ['127.0.0.1', 52400] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52400]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52400]
+WebSocket ['127.0.0.1', 52400] accepted by application
+D:\final year\project\FinalYearProject\MeroVada\chat\routing.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\routing.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\chat\consumers.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\consumers.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\MeroVada\asgi.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\MeroVada\asgi.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\MeroVada\asgi.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\MeroVada\asgi.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+HTTP b'GET' request for ['127.0.0.1', 52461]
+HTTP 200 response started for ['127.0.0.1', 52461]
+HTTP close for ['127.0.0.1', 52461]
+HTTP response complete for ['127.0.0.1', 52461]
+[mHTTP GET /chat/2/? 200 [0.09, 127.0.0.1:52461][0m
+[mHTTP GET /chat/2/? 200 [0.09, 127.0.0.1:52461][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52463]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52463]
+Upgraded connection ['127.0.0.1', 52463] to WebSocket
+WebSocket ['127.0.0.1', 52463] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52463]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52463]
+WebSocket ['127.0.0.1', 52463] accepted by application
+WebSocket connected for user bibek in room 2_3
+WebSocket closed for ['127.0.0.1', 52463]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52463]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52463]
+WebSocket disconnected for user bibek with code 1006
+HTTP b'GET' request for ['127.0.0.1', 52461]
+HTTP 200 response started for ['127.0.0.1', 52461]
+HTTP close for ['127.0.0.1', 52461]
+HTTP response complete for ['127.0.0.1', 52461]
+[mHTTP GET /chat/2/? 200 [0.02, 127.0.0.1:52461][0m
+[mHTTP GET /chat/2/? 200 [0.02, 127.0.0.1:52461][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52468]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52468]
+Upgraded connection ['127.0.0.1', 52468] to WebSocket
+WebSocket ['127.0.0.1', 52468] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52468]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52468]
+WebSocket ['127.0.0.1', 52468] accepted by application
+WebSocket connected for user bibek in room 2_3
+WebSocket closed for ['127.0.0.1', 52468]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52468]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52468]
+WebSocket disconnected for user bibek with code 1001
+HTTP b'GET' request for ['127.0.0.1', 52461]
+HTTP 200 response started for ['127.0.0.1', 52461]
+HTTP close for ['127.0.0.1', 52461]
+HTTP response complete for ['127.0.0.1', 52461]
+[mHTTP GET /chat/2/? 200 [0.03, 127.0.0.1:52461][0m
+[mHTTP GET /chat/2/? 200 [0.03, 127.0.0.1:52461][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52472]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52472]
+Upgraded connection ['127.0.0.1', 52472] to WebSocket
+WebSocket ['127.0.0.1', 52472] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52472]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52472]
+WebSocket ['127.0.0.1', 52472] accepted by application
+WebSocket connected for user bibek in room 2_3
+WebSocket closed for ['127.0.0.1', 52472]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52472]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52472]
+WebSocket disconnected for user bibek with code 1001
+HTTP b'GET' request for ['127.0.0.1', 52461]
+HTTP 200 response started for ['127.0.0.1', 52461]
+HTTP close for ['127.0.0.1', 52461]
+HTTP response complete for ['127.0.0.1', 52461]
+[mHTTP GET /chat/2/? 200 [0.02, 127.0.0.1:52461][0m
+[mHTTP GET /chat/2/? 200 [0.02, 127.0.0.1:52461][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52476]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52476]
+Upgraded connection ['127.0.0.1', 52476] to WebSocket
+WebSocket ['127.0.0.1', 52476] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52476]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52476]
+WebSocket ['127.0.0.1', 52476] accepted by application
+WebSocket connected for user bibek in room 2_3
+WebSocket closed for ['127.0.0.1', 52476]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52476]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52476]
+WebSocket disconnected for user bibek with code 1001
+HTTP b'GET' request for ['127.0.0.1', 52461]
+HTTP 200 response started for ['127.0.0.1', 52461]
+HTTP close for ['127.0.0.1', 52461]
+HTTP response complete for ['127.0.0.1', 52461]
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52461][0m
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52461][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52481]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52481]
+Upgraded connection ['127.0.0.1', 52481] to WebSocket
+WebSocket ['127.0.0.1', 52481] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52481]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52481]
+WebSocket ['127.0.0.1', 52481] accepted by application
+WebSocket connected for user bibek in room 2_3
+D:\final year\project\FinalYearProject\MeroVada\MeroVada\asgi.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\MeroVada\asgi.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\chat\consumers.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\consumers.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\chat\models.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\models.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\chat\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\chat\routing.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\chat\routing.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+HTTP b'GET' request for ['127.0.0.1', 52535]
+HTTP 200 response started for ['127.0.0.1', 52535]
+HTTP close for ['127.0.0.1', 52535]
+HTTP response complete for ['127.0.0.1', 52535]
+[mHTTP GET /chat/3/ 200 [0.09, 127.0.0.1:52535][0m
+[mHTTP GET /chat/3/ 200 [0.09, 127.0.0.1:52535][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52546]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52546]
+Upgraded connection ['127.0.0.1', 52546] to WebSocket
+WebSocket ['127.0.0.1', 52546] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52546]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52546]
+WebSocket ['127.0.0.1', 52546] accepted by application
+WebSocket incoming frame on ['127.0.0.1', 52546]
+Sent WebSocket packet to client for ['127.0.0.1', 52546]
+WebSocket incoming frame on ['127.0.0.1', 52546]
+Sent WebSocket packet to client for ['127.0.0.1', 52546]
+HTTP b'GET' request for ['127.0.0.1', 52557]
+HTTP 200 response started for ['127.0.0.1', 52557]
+HTTP close for ['127.0.0.1', 52557]
+HTTP response complete for ['127.0.0.1', 52557]
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52557][0m
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52557][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52560]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52560]
+Upgraded connection ['127.0.0.1', 52560] to WebSocket
+WebSocket ['127.0.0.1', 52560] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52560]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52560]
+WebSocket ['127.0.0.1', 52560] accepted by application
+WebSocket incoming frame on ['127.0.0.1', 52560]
+WebSocket closed for ['127.0.0.1', 52560]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52560]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52560]
+HTTP b'GET' request for ['127.0.0.1', 52557]
+Sent WebSocket packet to client for ['127.0.0.1', 52546]
+HTTP 200 response started for ['127.0.0.1', 52557]
+HTTP close for ['127.0.0.1', 52557]
+HTTP response complete for ['127.0.0.1', 52557]
+[mHTTP GET /chat/2/? 200 [0.04, 127.0.0.1:52557][0m
+[mHTTP GET /chat/2/? 200 [0.04, 127.0.0.1:52557][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52567]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52567]
+Upgraded connection ['127.0.0.1', 52567] to WebSocket
+WebSocket ['127.0.0.1', 52567] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52567]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52567]
+WebSocket ['127.0.0.1', 52567] accepted by application
+Using selector: SelectSelector
+Using selector: SelectSelector
+Using selector: SelectSelector
+Using selector: SelectSelector
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+HTTP b'GET' request for ['127.0.0.1', 52637]
+HTTP 200 response started for ['127.0.0.1', 52637]
+HTTP close for ['127.0.0.1', 52637]
+HTTP response complete for ['127.0.0.1', 52637]
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52637][0m
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52637][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52640]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52640]
+Upgraded connection ['127.0.0.1', 52640] to WebSocket
+WebSocket ['127.0.0.1', 52640] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52640]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52640]
+WebSocket ['127.0.0.1', 52640] accepted by application
+WebSocket incoming frame on ['127.0.0.1', 52640]
+Sent WebSocket packet to client for ['127.0.0.1', 52640]
+HTTP b'GET' request for ['127.0.0.1', 52652]
+HTTP 200 response started for ['127.0.0.1', 52652]
+HTTP close for ['127.0.0.1', 52652]
+HTTP response complete for ['127.0.0.1', 52652]
+[mHTTP GET /chat/3/ 200 [0.05, 127.0.0.1:52652][0m
+[mHTTP GET /chat/3/ 200 [0.05, 127.0.0.1:52652][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52659]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52659]
+Upgraded connection ['127.0.0.1', 52659] to WebSocket
+WebSocket ['127.0.0.1', 52659] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52659]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52659]
+WebSocket ['127.0.0.1', 52659] accepted by application
+WebSocket incoming frame on ['127.0.0.1', 52659]
+Sent WebSocket packet to client for ['127.0.0.1', 52659]
+Sent WebSocket packet to client for ['127.0.0.1', 52640]
+WebSocket incoming frame on ['127.0.0.1', 52640]
+WebSocket closed for ['127.0.0.1', 52640]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52640]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52640]
+HTTP b'GET' request for ['127.0.0.1', 52637]
+Sent WebSocket packet to client for ['127.0.0.1', 52659]
+HTTP 200 response started for ['127.0.0.1', 52637]
+HTTP close for ['127.0.0.1', 52637]
+HTTP response complete for ['127.0.0.1', 52637]
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52637][0m
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52637][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52674]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52674]
+Upgraded connection ['127.0.0.1', 52674] to WebSocket
+WebSocket ['127.0.0.1', 52674] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52674]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52674]
+WebSocket ['127.0.0.1', 52674] accepted by application
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\Payment\views.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+D:\final year\project\FinalYearProject\MeroVada\MeroVada\settings.py changed, reloading.
+D:\final year\project\FinalYearProject\MeroVada\MeroVada\settings.py changed, reloading.
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+HTTP b'GET' request for ['127.0.0.1', 52776]
+HTTP 200 response started for ['127.0.0.1', 52776]
+HTTP close for ['127.0.0.1', 52776]
+HTTP response complete for ['127.0.0.1', 52776]
+[mHTTP GET /chat/2/? 200 [0.06, 127.0.0.1:52776][0m
+[mHTTP GET /chat/2/? 200 [0.06, 127.0.0.1:52776][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52778]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52778]
+Upgraded connection ['127.0.0.1', 52778] to WebSocket
+WebSocket ['127.0.0.1', 52778] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52778]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52778]
+WebSocket ['127.0.0.1', 52778] accepted by application
+WebSocket incoming frame on ['127.0.0.1', 52778]
+WebSocket closed for ['127.0.0.1', 52778]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52778]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52778]
+HTTP b'GET' request for ['127.0.0.1', 52776]
+HTTP 200 response started for ['127.0.0.1', 52776]
+HTTP close for ['127.0.0.1', 52776]
+HTTP response complete for ['127.0.0.1', 52776]
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52776][0m
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52776][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52784]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52784]
+Upgraded connection ['127.0.0.1', 52784] to WebSocket
+WebSocket ['127.0.0.1', 52784] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52784]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52784]
+WebSocket ['127.0.0.1', 52784] accepted by application
+WebSocket closed for ['127.0.0.1', 52784]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52784]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52784]
+HTTP b'GET' request for ['127.0.0.1', 52776]
+HTTP 200 response started for ['127.0.0.1', 52776]
+HTTP close for ['127.0.0.1', 52776]
+HTTP response complete for ['127.0.0.1', 52776]
+[mHTTP GET / 200 [0.04, 127.0.0.1:52776][0m
+[mHTTP GET / 200 [0.04, 127.0.0.1:52776][0m
+HTTP b'GET' request for ['127.0.0.1', 52790]
+HTTP 200 response started for ['127.0.0.1', 52790]
+HTTP close for ['127.0.0.1', 52790]
+HTTP response complete for ['127.0.0.1', 52790]
+[mHTTP GET / 200 [0.04, 127.0.0.1:52790][0m
+[mHTTP GET / 200 [0.04, 127.0.0.1:52790][0m
+HTTP b'GET' request for ['127.0.0.1', 52790]
+HTTP 200 response started for ['127.0.0.1', 52790]
+HTTP close for ['127.0.0.1', 52790]
+HTTP response complete for ['127.0.0.1', 52790]
+[mHTTP GET / 200 [0.01, 127.0.0.1:52790][0m
+[mHTTP GET / 200 [0.01, 127.0.0.1:52790][0m
+Using selector: SelectSelector
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+HTTP b'GET' request for ['127.0.0.1', 52830]
+HTTP 200 response started for ['127.0.0.1', 52830]
+HTTP close for ['127.0.0.1', 52830]
+HTTP response complete for ['127.0.0.1', 52830]
+[mHTTP GET /chat/ 200 [0.04, 127.0.0.1:52830][0m
+[mHTTP GET /chat/ 200 [0.04, 127.0.0.1:52830][0m
+HTTP b'GET' request for ['127.0.0.1', 52830]
+HTTP 200 response started for ['127.0.0.1', 52830]
+HTTP close for ['127.0.0.1', 52830]
+HTTP response complete for ['127.0.0.1', 52830]
+[mHTTP GET /chat/3/ 200 [0.03, 127.0.0.1:52830][0m
+[mHTTP GET /chat/3/ 200 [0.03, 127.0.0.1:52830][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52838]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52838]
+Upgraded connection ['127.0.0.1', 52838] to WebSocket
+WebSocket ['127.0.0.1', 52838] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52838]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52838]
+WebSocket ['127.0.0.1', 52838] accepted by application
+WebSocket incoming frame on ['127.0.0.1', 52838]
+Sent WebSocket packet to client for ['127.0.0.1', 52838]
+HTTP b'GET' request for ['127.0.0.1', 52843]
+HTTP 200 response started for ['127.0.0.1', 52843]
+HTTP close for ['127.0.0.1', 52843]
+HTTP response complete for ['127.0.0.1', 52843]
+[mHTTP GET /chat/ 200 [0.03, 127.0.0.1:52843][0m
+[mHTTP GET /chat/ 200 [0.03, 127.0.0.1:52843][0m
+HTTP b'GET' request for ['127.0.0.1', 52843]
+HTTP 200 response started for ['127.0.0.1', 52843]
+HTTP close for ['127.0.0.1', 52843]
+HTTP response complete for ['127.0.0.1', 52843]
+[mHTTP GET /chat/2/ 200 [0.05, 127.0.0.1:52843][0m
+[mHTTP GET /chat/2/ 200 [0.05, 127.0.0.1:52843][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52846]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52846]
+Upgraded connection ['127.0.0.1', 52846] to WebSocket
+WebSocket ['127.0.0.1', 52846] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52846]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52846]
+WebSocket ['127.0.0.1', 52846] accepted by application
+WebSocket incoming frame on ['127.0.0.1', 52846]
+WebSocket closed for ['127.0.0.1', 52846]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52846]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52846]
+HTTP b'GET' request for ['127.0.0.1', 52843]
+Sent WebSocket packet to client for ['127.0.0.1', 52838]
+HTTP 200 response started for ['127.0.0.1', 52843]
+HTTP close for ['127.0.0.1', 52843]
+HTTP response complete for ['127.0.0.1', 52843]
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52843][0m
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:52843][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52851]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:52851]
+Upgraded connection ['127.0.0.1', 52851] to WebSocket
+WebSocket ['127.0.0.1', 52851] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52851]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:52851]
+WebSocket ['127.0.0.1', 52851] accepted by application
+WebSocket incoming frame on ['127.0.0.1', 52838]
+Sent WebSocket packet to client for ['127.0.0.1', 52838]
+Sent WebSocket packet to client for ['127.0.0.1', 52851]
+WebSocket closed for ['127.0.0.1', 52851]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52851]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52851]
+HTTP b'GET' request for ['127.0.0.1', 52843]
+HTTP 200 response started for ['127.0.0.1', 52843]
+HTTP close for ['127.0.0.1', 52843]
+HTTP response complete for ['127.0.0.1', 52843]
+[mHTTP GET /cart/ 200 [0.02, 127.0.0.1:52843][0m
+[mHTTP GET /cart/ 200 [0.02, 127.0.0.1:52843][0m
+HTTP b'GET' request for ['127.0.0.1', 52843]
+HTTP b'GET' request for ['127.0.0.1', 52856]
+HTTP 304 response started for ['127.0.0.1', 52843]
+HTTP close for ['127.0.0.1', 52843]
+HTTP response complete for ['127.0.0.1', 52843]
+[36mHTTP GET /media/item_images/images.jpeg 304 [0.01, 127.0.0.1:52843][0m
+[36mHTTP GET /media/item_images/images.jpeg 304 [0.01, 127.0.0.1:52843][0m
+HTTP 304 response started for ['127.0.0.1', 52856]
+HTTP close for ['127.0.0.1', 52856]
+HTTP response complete for ['127.0.0.1', 52856]
+[36mHTTP GET /media/item_images/R_WDBZCqD.jpeg 304 [0.01, 127.0.0.1:52856][0m
+[36mHTTP GET /media/item_images/R_WDBZCqD.jpeg 304 [0.01, 127.0.0.1:52856][0m
+HTTP b'GET' request for ['127.0.0.1', 52843]
+HTTP 302 response started for ['127.0.0.1', 52843]
+HTTP close for ['127.0.0.1', 52843]
+HTTP response complete for ['127.0.0.1', 52843]
+[32mHTTP GET /remove_from_cart/12/ 302 [0.01, 127.0.0.1:52843][0m
+[32mHTTP GET /remove_from_cart/12/ 302 [0.01, 127.0.0.1:52843][0m
+HTTP b'GET' request for ['127.0.0.1', 52843]
+HTTP 200 response started for ['127.0.0.1', 52843]
+HTTP close for ['127.0.0.1', 52843]
+HTTP response complete for ['127.0.0.1', 52843]
+[mHTTP GET /cart/ 200 [0.02, 127.0.0.1:52843][0m
+[mHTTP GET /cart/ 200 [0.02, 127.0.0.1:52843][0m
+HTTP b'GET' request for ['127.0.0.1', 52843]
+HTTP 302 response started for ['127.0.0.1', 52843]
+HTTP close for ['127.0.0.1', 52843]
+HTTP response complete for ['127.0.0.1', 52843]
+[32mHTTP GET /remove_from_cart/13/ 302 [0.02, 127.0.0.1:52843][0m
+[32mHTTP GET /remove_from_cart/13/ 302 [0.02, 127.0.0.1:52843][0m
+HTTP b'GET' request for ['127.0.0.1', 52843]
+HTTP 200 response started for ['127.0.0.1', 52843]
+HTTP close for ['127.0.0.1', 52843]
+HTTP response complete for ['127.0.0.1', 52843]
+[mHTTP GET /cart/ 200 [0.02, 127.0.0.1:52843][0m
+[mHTTP GET /cart/ 200 [0.02, 127.0.0.1:52843][0m
+WebSocket closed for ['127.0.0.1', 52838]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52838]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:52838]
+Using selector: SelectSelector
+Using selector: SelectSelector
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+HTTP b'GET' request for ['127.0.0.1', 62084]
+HTTP 200 response started for ['127.0.0.1', 62084]
+HTTP close for ['127.0.0.1', 62084]
+HTTP response complete for ['127.0.0.1', 62084]
+[mHTTP GET /login/ 200 [0.03, 127.0.0.1:62084][0m
+[mHTTP GET /login/ 200 [0.03, 127.0.0.1:62084][0m
+HTTP b'GET' request for ['127.0.0.1', 62084]
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+HTTP 404 response started for ['127.0.0.1', 62084]
+HTTP close for ['127.0.0.1', 62084]
+HTTP response complete for ['127.0.0.1', 62084]
+[33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:62084][0m
+[33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:62084][0m
+HTTP b'POST' request for ['127.0.0.1', 62084]
+HTTP 200 response started for ['127.0.0.1', 62084]
+HTTP close for ['127.0.0.1', 62084]
+HTTP response complete for ['127.0.0.1', 62084]
+[mHTTP POST /login/ 200 [0.29, 127.0.0.1:62084][0m
+[mHTTP POST /login/ 200 [0.29, 127.0.0.1:62084][0m
+HTTP b'POST' request for ['127.0.0.1', 62084]
+HTTP 302 response started for ['127.0.0.1', 62084]
+HTTP close for ['127.0.0.1', 62084]
+HTTP response complete for ['127.0.0.1', 62084]
+[32mHTTP POST /login/ 302 [0.29, 127.0.0.1:62084][0m
+[32mHTTP POST /login/ 302 [0.29, 127.0.0.1:62084][0m
+HTTP b'GET' request for ['127.0.0.1', 62084]
+HTTP 200 response started for ['127.0.0.1', 62084]
+HTTP close for ['127.0.0.1', 62084]
+HTTP response complete for ['127.0.0.1', 62084]
+[mHTTP GET /owner-dashboard/ 200 [0.02, 127.0.0.1:62084][0m
+[mHTTP GET /owner-dashboard/ 200 [0.02, 127.0.0.1:62084][0m
+HTTP b'GET' request for ['127.0.0.1', 62084]
+HTTP 200 response started for ['127.0.0.1', 62084]
+HTTP close for ['127.0.0.1', 62084]
+HTTP response complete for ['127.0.0.1', 62084]
+[mHTTP GET /notifications/ 200 [0.03, 127.0.0.1:62084][0m
+[mHTTP GET /notifications/ 200 [0.03, 127.0.0.1:62084][0m
+HTTP b'GET' request for ['127.0.0.1', 62084]
+HTTP 200 response started for ['127.0.0.1', 62084]
+HTTP close for ['127.0.0.1', 62084]
+HTTP response complete for ['127.0.0.1', 62084]
+[mHTTP GET /notifications/6/edit/ 200 [0.05, 127.0.0.1:62084][0m
+[mHTTP GET /notifications/6/edit/ 200 [0.05, 127.0.0.1:62084][0m
+HTTP b'GET' request for ['127.0.0.1', 62120]
+HTTP 200 response started for ['127.0.0.1', 62120]
+HTTP close for ['127.0.0.1', 62120]
+HTTP response complete for ['127.0.0.1', 62120]
+[mHTTP GET /login/ 200 [0.01, 127.0.0.1:62120][0m
+[mHTTP GET /login/ 200 [0.01, 127.0.0.1:62120][0m
+HTTP b'POST' request for ['127.0.0.1', 62120]
+HTTP 302 response started for ['127.0.0.1', 62120]
+HTTP close for ['127.0.0.1', 62120]
+HTTP response complete for ['127.0.0.1', 62120]
+[32mHTTP POST /login/ 302 [0.28, 127.0.0.1:62120][0m
+[32mHTTP POST /login/ 302 [0.28, 127.0.0.1:62120][0m
+HTTP b'GET' request for ['127.0.0.1', 62120]
+HTTP 200 response started for ['127.0.0.1', 62120]
+HTTP close for ['127.0.0.1', 62120]
+HTTP response complete for ['127.0.0.1', 62120]
+[mHTTP GET / 200 [0.02, 127.0.0.1:62120][0m
+[mHTTP GET / 200 [0.02, 127.0.0.1:62120][0m
+HTTP b'GET' request for ['127.0.0.1', 62120]
+HTTP 200 response started for ['127.0.0.1', 62120]
+HTTP close for ['127.0.0.1', 62120]
+HTTP response complete for ['127.0.0.1', 62120]
+[mHTTP GET / 200 [0.02, 127.0.0.1:62120][0m
+[mHTTP GET / 200 [0.02, 127.0.0.1:62120][0m
+HTTP b'GET' request for ['127.0.0.1', 62120]
+HTTP 200 response started for ['127.0.0.1', 62120]
+HTTP close for ['127.0.0.1', 62120]
+HTTP response complete for ['127.0.0.1', 62120]
+[mHTTP GET /notifications/ 200 [0.01, 127.0.0.1:62120][0m
+[mHTTP GET /notifications/ 200 [0.01, 127.0.0.1:62120][0m
+HTTP b'GET' request for ['127.0.0.1', 62120]
+HTTP 200 response started for ['127.0.0.1', 62120]
+HTTP close for ['127.0.0.1', 62120]
+HTTP response complete for ['127.0.0.1', 62120]
+[mHTTP GET /rental_dashboard 200 [0.05, 127.0.0.1:62120][0m
+[mHTTP GET /rental_dashboard 200 [0.05, 127.0.0.1:62120][0m
+HTTP b'GET' request for ['127.0.0.1', 62120]
+HTTP 200 response started for ['127.0.0.1', 62120]
+HTTP close for ['127.0.0.1', 62120]
+HTTP response complete for ['127.0.0.1', 62120]
+[mHTTP GET /chat/ 200 [0.04, 127.0.0.1:62120][0m
+[mHTTP GET /chat/ 200 [0.04, 127.0.0.1:62120][0m
+HTTP b'GET' request for ['127.0.0.1', 62120]
+HTTP 200 response started for ['127.0.0.1', 62120]
+HTTP close for ['127.0.0.1', 62120]
+HTTP response complete for ['127.0.0.1', 62120]
+[mHTTP GET /chat/2/ 200 [0.06, 127.0.0.1:62120][0m
+[mHTTP GET /chat/2/ 200 [0.06, 127.0.0.1:62120][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:62146]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:62146]
+Upgraded connection ['127.0.0.1', 62146] to WebSocket
+WebSocket ['127.0.0.1', 62146] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:62146]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:62146]
+WebSocket ['127.0.0.1', 62146] accepted by application
+WebSocket incoming frame on ['127.0.0.1', 62146]
+WebSocket closed for ['127.0.0.1', 62146]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:62146]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:62146]
+HTTP b'GET' request for ['127.0.0.1', 62120]
+HTTP 200 response started for ['127.0.0.1', 62120]
+HTTP close for ['127.0.0.1', 62120]
+HTTP response complete for ['127.0.0.1', 62120]
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:62120][0m
+[mHTTP GET /chat/2/? 200 [0.05, 127.0.0.1:62120][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:62151]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:62151]
+Upgraded connection ['127.0.0.1', 62151] to WebSocket
+WebSocket ['127.0.0.1', 62151] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:62151]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:62151]
+WebSocket ['127.0.0.1', 62151] accepted by application
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /notifications/ 200 [0.04, 127.0.0.1:62154][0m
+[mHTTP GET /notifications/ 200 [0.04, 127.0.0.1:62154][0m
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /product/6/ 200 [0.04, 127.0.0.1:62154][0m
+[mHTTP GET /product/6/ 200 [0.04, 127.0.0.1:62154][0m
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP b'GET' request for ['127.0.0.1', 62155]
+HTTP b'GET' request for ['127.0.0.1', 62162]
+HTTP 304 response started for ['127.0.0.1', 62162]
+HTTP close for ['127.0.0.1', 62162]
+HTTP response complete for ['127.0.0.1', 62162]
+[36mHTTP GET /media/item_images/vertical-glass-refrigerators-showcase-drinks-260nw-2029965638.webp 304 [0.01, 127.0.0.1:62162][0m
+[36mHTTP GET /media/item_images/vertical-glass-refrigerators-showcase-drinks-260nw-2029965638.webp 304 [0.01, 127.0.0.1:62162][0m
+HTTP 200 response started for ['127.0.0.1', 62155]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP response chunk for ['127.0.0.1', 62155]
+HTTP close for ['127.0.0.1', 62155]
+HTTP response complete for ['127.0.0.1', 62155]
+[mHTTP GET /media/item_images/MacBook_Air_-_2_UcC0FvV.png 200 [0.01, 127.0.0.1:62155][0m
+[mHTTP GET /media/item_images/MacBook_Air_-_2_UcC0FvV.png 200 [0.01, 127.0.0.1:62155][0m
+HTTP response chunk for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /media/item_images/MacBook_Air_-_2.png 200 [0.01, 127.0.0.1:62154][0m
+[mHTTP GET /media/item_images/MacBook_Air_-_2.png 200 [0.01, 127.0.0.1:62154][0m
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /product/7/ 200 [0.03, 127.0.0.1:62154][0m
+[mHTTP GET /product/7/ 200 [0.03, 127.0.0.1:62154][0m
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP b'GET' request for ['127.0.0.1', 62155]
+HTTP 200 response started for ['127.0.0.1', 62155]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP response chunk for ['127.0.0.1', 62155]
+HTTP close for ['127.0.0.1', 62155]
+HTTP response complete for ['127.0.0.1', 62155]
+[mHTTP GET /media/item_images/R_OczdcCy.jpeg 200 [0.01, 127.0.0.1:62155][0m
+[mHTTP GET /media/item_images/R_OczdcCy.jpeg 200 [0.01, 127.0.0.1:62155][0m
+HTTP response chunk for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /media/item_images/images.jpeg 200 [0.01, 127.0.0.1:62154][0m
+[mHTTP GET /media/item_images/images.jpeg 200 [0.01, 127.0.0.1:62154][0m
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /product/7/ 200 [0.04, 127.0.0.1:62154][0m
+[mHTTP GET /product/7/ 200 [0.04, 127.0.0.1:62154][0m
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /owner-dashboard/ 200 [0.03, 127.0.0.1:62154][0m
+[mHTTP GET /owner-dashboard/ 200 [0.03, 127.0.0.1:62154][0m
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /chat/ 200 [0.05, 127.0.0.1:62154][0m
+[mHTTP GET /chat/ 200 [0.05, 127.0.0.1:62154][0m
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /chat/3/ 200 [0.06, 127.0.0.1:62154][0m
+[mHTTP GET /chat/3/ 200 [0.06, 127.0.0.1:62154][0m
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:62177]
+WebSocket HANDSHAKING /ws/chat/2_3/ [127.0.0.1:62177]
+Upgraded connection ['127.0.0.1', 62177] to WebSocket
+WebSocket ['127.0.0.1', 62177] open and established
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:62177]
+WebSocket CONNECT /ws/chat/2_3/ [127.0.0.1:62177]
+WebSocket ['127.0.0.1', 62177] accepted by application
+WebSocket closed for ['127.0.0.1', 62177]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:62177]
+WebSocket DISCONNECT /ws/chat/2_3/ [127.0.0.1:62177]
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /product/7/ 200 [0.03, 127.0.0.1:62154][0m
+[mHTTP GET /product/7/ 200 [0.03, 127.0.0.1:62154][0m
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /product/6/ 200 [0.03, 127.0.0.1:62154][0m
+[mHTTP GET /product/6/ 200 [0.03, 127.0.0.1:62154][0m
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /product/2/ 200 [0.03, 127.0.0.1:62154][0m
+[mHTTP GET /product/2/ 200 [0.03, 127.0.0.1:62154][0m
+HTTP b'GET' request for ['127.0.0.1', 62154]
+HTTP 200 response started for ['127.0.0.1', 62154]
+HTTP close for ['127.0.0.1', 62154]
+HTTP response complete for ['127.0.0.1', 62154]
+[mHTTP GET /login/ 200 [0.02, 127.0.0.1:62154][0m
+[mHTTP GET /login/ 200 [0.02, 127.0.0.1:62154][0m
+Using selector: SelectSelector
+Using selector: SelectSelector
+Using selector: SelectSelector

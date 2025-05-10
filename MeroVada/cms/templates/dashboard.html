@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block title %}Admin Dashboard{% endblock %}
+{% block body %}
+    <h2>Admin Dashboard</h2>
+
+    <!-- Display Messages -->
+    {% if messages %}
+        <div style="text-align: center; margin-bottom: 20px;">
+            {% for message in messages %}
+                <p style="color: {% if message.tags == 'success' %}green{% else %}red{% endif %};">
+                    {{ message }}
+                </p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <!-- Statistics Grid -->
+    <div class="stats-grid">
+        <div class="stat-card red">
+            <h3>{{ total_users }}</h3>
+            <p>Users</p>
+        </div>
+        <div class="stat-card yellow">
+            <h3>{{ total_items }}</h3>
+            <p>Items</p>
+        </div>
+        <div class="stat-card green">
+            <h3>{{ total_orders }}</h3>
+            <p>Orders</p>
+        </div>
+        <div class="stat-card blue">
+            <h3>{{ total_reviews }}</h3>
+            <p>Reviews</p>
+        </div>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card red">
+            <h3>{{ total_notifications }}</h3>
+            <p>Notifications</p>
+        </div>
+        <div class="stat-card yellow">
+            <h3>{{ total_rental_plans }}</h3>
+            <p>Rental Plans</p>
+        </div>
+      
+        <div class="stat-card blue">
+            <h3>{{ total_bookings }}</h3>
+            <p>Bookings</p>
+        </div>
+    </div>
+
+    
+        <div class="chart-card">
+            <h3>Recent Items</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Created At</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in recent_items %}
+                        <tr>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.category }}</td>
+                            <td>{{ item.price }}</td>
+                            <td>{{ item.location|default:"N/A" }}</td>
+                            <td>{{ item.status }}</td>
+                            <td>{{ item.created_at|date:"Y-m-d" }}</td>
+                        </tr>
+                    {% empty %}
+                        <tr><td colspan="6">No items available</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+   
+{% endblock %}

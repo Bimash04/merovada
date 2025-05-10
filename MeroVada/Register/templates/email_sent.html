@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .verification-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .verification-message {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .verification-message h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .verification-message p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .verification-message a {
+            color: #007bff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .verification-message a:hover {
+            text-decoration: underline;
+        }
+
+        .verification-message .cta-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #007bff;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .verification-message .cta-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="verification-container">
+        <div class="verification-message">
+            <h2>Email Verification</h2>
+            <p>Thank you for registering with us! 🎉</p>
+            <p>An email verification link has been sent to your inbox. Please check your email and click on the verification link to complete your registration process.</p>
+            <p>If you did not find the email, please check the spam folders.</p>
+            {% comment %} <a href="{% url 'login' %}" class="cta-btn">Go to Login</a> {% endcomment %}
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Need help? Contact our support team at merovadaSupport@gmail.com.</p>
+    </div>
+</body>
+</html>

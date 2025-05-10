@@ -1,0 +1,199 @@
+{% extends 'layout/base.html' %}
+{% block body %}
+
+<style>
+
+/* Title Styling */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-table th,
+.item-table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-table th {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.item-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.item-table tr:hover {
+    background: #f1f1f1;
+    transition: 0.3s ease-in-out;
+}
+
+/* Item Image */
+.item-table td img.item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Action Buttons */
+.action-links a {
+    margin-right: 8px;
+}
+
+.btn {
+    padding: 10px 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #a71d2a;
+}
+
+/* Pagination Styling */
+.pagination-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 10px 14px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.pagination a:hover {
+    background: #007bff;
+    color: white;
+}
+
+.pagination .current {
+    padding: 10px 14px;
+    font-weight: bold;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .item-table th,
+    .item-table td {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .pagination a {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+</style>
+
+<div class="container">
+    <h1>Your Items</h1>
+
+    <div class="table-container">
+        <table class="item-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Image</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in page_obj %}
+                    <tr>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.description }}</td>
+                        <td>${{ item.price }}</td>
+                        <td>{{ item.get_category_display }}</td>
+                        <td>{{ item.location }}</td>
+                        <td>{{ item.get_status_display }}</td>
+                        <td>
+                            {% if item.image %}
+                                <img src="{{ item.image.url }}" alt="{{ item.name }}" class="item-image">
+                            {% else %}
+                                <p>No image</p>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <div class="action-links">
+                                <a href="{% url 'edit_item' item.id %}" class="btn btn-primary">Edit</a>
+                                <a href="{% url 'delete_item' item.id %}" class="btn btn-danger">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination-container">
+        <div class="pagination">
+            {% if page_obj.has_previous %}
+                <a href="?page=1">&laquo; First</a>
+                <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+            {% endif %}
+
+            <span class="current">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">Next</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+<!-- D:\final year\project\FinalYearProject\MeroVada\cms\templates\delete_user.html -->
+{% extends 'base.html' %}
+{% block title %}Delete User{% endblock %}
+{% block body %}
+    <h2>Delete User: {{ user.username }}</h2>
+
+    <p>Are you sure you want to delete this user? This action cannot be undone.</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" style="background: #ff4d4f;">Delete User</button>
+    </form>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="{% url 'manage_users' %}" style="color: #1890ff; text-decoration: none;">Cancel</a>
+    </div>
+{% endblock %}

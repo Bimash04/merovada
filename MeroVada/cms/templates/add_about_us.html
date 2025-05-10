@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Add About Us - MeroVada{% endblock %}
+
+{% block body %}
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Add About Us Content</h2>
+      {% if user.is_superuser %}
+        <form method="POST" enctype="multipart/form-data" class="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-lg">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit" class="btn-primary inline-block px-6 py-2 rounded-full text-white font-medium hover:bg-red-600 transition-all">Save Content</button>
+        </form>
+      {% else %}
+        <p class="text-center text-gray-600">Only administrators can add About Us content.</p>
+      {% endif %}
+    </div>
+  </section>
+{% endblock %}

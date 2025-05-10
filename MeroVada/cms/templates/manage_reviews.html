@@ -1,0 +1,48 @@
+<!-- D:\final year\project\FinalYearProject\MeroVada\cms\templates\manage_reviews.html -->
+{% extends 'base.html' %}
+{% block title %}Manage Reviews{% endblock %}
+{% block body %}
+    <h2>Manage Reviews</h2>
+
+    <!-- Display Messages -->
+    {% if messages %}
+        <div style="text-align: center; margin-bottom: 20px;">
+            {% for message in messages %}
+                <p style="color: {% if message.tags == 'success' %}green{% else %}red{% endif %};">
+                    {{ message }}
+                </p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% comment %} <a href="{% url 'create_review' %}" class="btn">Create New Review</a> {% endcomment %}
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>User</th>
+                <th>Comment</th>
+                <th>Is Approved</th>
+                <th>Created At</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for review in all_reviews %}
+                <tr>
+                    <td>{{ review.item.name }}</td>
+                    <td>{{ review.user.username }}</td>
+                    <td>{{ review.comment|truncatewords:10 }}</td>
+                    <td>{{ review.is_approved }}</td>
+                    <td>{{ review.created_at|date:"Y-m-d" }}</td>
+                    <td class="action-buttons">
+                        <a href="{% url 'update_review' review.id %}" class="edit">Edit</a>
+                        <a href="{% url 'delete_review' review.id %}" class="delete">Delete</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr><td colspan="6">No reviews available</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

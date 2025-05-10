@@ -1,0 +1,93 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}Checkout - Renter{% endblock %}
+
+{% block body %}
+<section class="bg-white p-12">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Checkout</h2>
+    <div class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8">
+        <div class="flex items-center space-x-6">
+            {% if item.image %}
+                <img src="{{ item.image.url }}" alt="{{ item.name }}" class="w-32 h-32 object-cover rounded-lg">
+            {% endif %}
+            <div>
+                <h3 class="text-xl font-semibold">{{ item.name }}</h3>
+                <p class="text-gray-600">
+                    Quantity: 
+                    <input type="number" id="quantity" name="quantity" value="{{ quantity|default:1 }}" min="1"
+                        class="border p-2 w-16 text-center rounded-lg focus:ring-2 focus:ring-red-500">
+                </p>
+                <p class="text-green-600 font-bold text-lg">
+                    Total: Rs <span id="total-price">{{ total_price|floatformat:2 }}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <form method="post" class="space-y-6 max-w-2xl" id="checkout-form">
+        {% csrf_token %}
+        <input type="hidden" name="item_id" value="{{ item.id }}">
+        <input type="hidden" id="hidden-quantity" name="quantity" value="{{ quantity|default:1 }}">
+        <input type="hidden" id="hidden-total" name="total_price" value="{{ total_price }}">
+
+        <div>
+            <label class="block text-gray-700 mb-2">Payment Frequency</label>
+            <select name="payment_frequency" id="payment-frequency" required 
+                class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-red-500">
+                <option value="weekly" data-multiplier="1">Weekly</option>
+                <option value="fortnightly" data-multiplier="2">Fortnightly</option>
+                <option value="monthly" data-multiplier="4">Monthly</option>
+                <option value="quarterly" data-multiplier="12">Quarterly</option>
+                <option value="half_yearly" data-multiplier="24">Half-Yearly</option>
+                <option value="yearly" data-multiplier="52">Yearly</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 mb-2">Shipping Address</label>
+            <textarea name="shipping_address" required 
+                class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-red-500"></textarea>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 mb-2">Payment Method</label>
+            <select name="payment_method" id="payment-method" required 
+                class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-red-500">
+                <option value="Khalti">Khalti Online Payment</option>
+                <option value="cash_on_delivery">Cash on Delivery</option>
+            </select>
+        </div>
+
+        <button type="submit" 
+            class="bg-red-500 text-white px-8 py-3 rounded-lg hover:bg-red-600 transition-colors">
+            Continue to Payment
+        </button>
+    </form>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const quantityInput = document.getElementById("quantity");
+        const paymentFrequencySelect = document.getElementById("payment-frequency");
+        const totalPriceElement = document.getElementById("total-price");
+        const hiddenQuantity = document.getElementById("hidden-quantity");
+        const hiddenTotal = document.getElementById("hidden-total");
+        const form = document.getElementById("checkout-form");
+        const basePrice = {{ item.price|floatformat:2 }};
+
+        function updateTotalPrice() {
+            const quantity = parseInt(quantityInput.value) || 1;
+            const selectedOption = paymentFrequencySelect.options[paymentFrequencySelect.selectedIndex];
+            const multiplier = parseInt(selectedOption.getAttribute("data-multiplier")) || 1;
+            const newTotalPrice = basePrice * quantity * multiplier;
+            totalPriceElement.textContent = newTotalPrice.toFixed(2);
+            hiddenQuantity.value = quantity;
+            hiddenTotal.value = newTotalPrice.toFixed(2);
+        }
+
+        quantityInput.addEventListener("input", updateTotalPrice);
+        paymentFrequencySelect.addEventListener("change", updateTotalPrice);
+        form.addEventListener("submit", updateTotalPrice);
+    });
+</script>
+{% endblock %}

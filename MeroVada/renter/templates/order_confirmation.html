@@ -1,0 +1,33 @@
+{% extends 'layout/base.html' %}
+{% block body %}
+<section class="bg-white p-12 mt-28 text-center">
+    <div class="max-w-2xl mx-auto">
+        <svg class="w-20 h-20 text-green-500 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        
+        <h2 class="text-3xl font-bold mb-4">Order Confirmed!</h2>
+        <div class="bg-gray-50 p-6 rounded-lg text-left">
+            <h3 class="text-xl font-semibold mb-4">Order Details</h3>
+            <p class="mb-2"><span class="font-medium">Item:</span> {{ order.item.name }}</p>
+            <p class="mb-2"><span class="font-medium">Quantity:</span> {{ order.quantity }}</p>
+            <p class="mb-2"><span class="font-medium">Total Paid:</span> Rs {{ order.total_price }}</p>
+            <p class="mb-2"><span class="font-medium">Payment Method:</span> {{ order.get_payment_method_display }}</p>
+            <p class="mb-2"><span class="font-medium">Status:</span> {{ order.get_status_display }}</p>
+            
+            {# Add Khalti Transaction ID #}
+            {% if order.pidx %}
+                <p class="mb-2">
+                    {% comment %} <span class="font-medium">Khalti Transaction ID:</span> {{ order.pidx }} {% endcomment %}
+                </p>
+            {% endif %}
+        </div>
+        
+        <a href="{% url 'home' %}" 
+           class="mt-8 inline-block bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition-colors">
+            Continue Shopping
+        </a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,40 @@
+<!-- D:\final year\project\FinalYearProject\MeroVada\cms\templates\update_profile.html -->
+{% extends 'base.html' %}
+{% block title %}Update Profile{% endblock %}
+{% block body %}
+    <h2>Update Profile for {{ profile.user.username }}</h2>
+
+    <!-- Display Messages -->
+    {% if messages %}
+        <div style="text-align: center; margin-bottom: 20px;">
+            {% for message in messages %}
+                <p style="color: {% if message.tags == 'success' %}green{% else %}red{% endif %};">
+                    {{ message }}
+                </p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <!-- Display Form Errors -->
+    {% if form.errors %}
+        <div style="color: red; margin-bottom: 20px;">
+            <ul>
+                {% for field, errors in form.errors.items %}
+                    {% for error in errors %}
+                        <li>{{ field }}: {{ error }}</li>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update Profile</button>
+    </form>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="{% url 'manage_profiles' %}" style="color: #1890ff; text-decoration: none;">Back to Profiles</a>
+    </div>
+{% endblock %}

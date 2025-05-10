@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Notification</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        h2 { color: #333; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>New Payment Received</h2>
+        <p>Dear {{ owner.username }},</p>
+        <p>A payment has been made for your item. Below are the details:</p>
+        <ul>
+            <li><strong>Item:</strong> {{ item.name }}</li>
+            <li><strong>Renter:</strong> {{ renter }}</li>
+            <li><strong>Quantity:</strong> {{ quantity }}</li>
+            <li><strong>Total Amount:</strong> Rs {{ total_price }}</li>
+            <li><strong>Order ID:</strong> {{ order_id }}</li>
+            <li><strong>Transaction ID:</strong> {{ transaction_id|default:"N/A" }}</li>
+        </ul>
+        <p>Thank you for listing your item with MeroVada!</p>
+    </div>
+</body>
+</html>

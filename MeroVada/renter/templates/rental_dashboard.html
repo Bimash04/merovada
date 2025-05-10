@@ -1,0 +1,169 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}Renter Dashboard{% endblock %}
+
+{% block body %}
+<section class="p-6 md:p-10 mt-20 bg-gradient-to-b from-gray-50 to-gray-100 min-h-screen">
+    <div class="max-w-7xl mx-auto bg-white p-6 md:p-8 rounded-xl shadow-2xl">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 tracking-tight">
+            Welcome, {{ request.user.username }}!
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Rental History -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">Rental History</h3>
+                {% if rental_history %}
+                    <ul class="space-y-4">
+                        {% for rental in rental_history %}
+                            <li class="border-b border-gray-200 pb-4 text-gray-700">
+                                <strong class="text-gray-900 text-lg">{{ rental.name }}</strong>
+                                <p class="text-sm text-gray-500">
+                                    {% for plan in rental.rentalplan_set.all %}
+                                        {% if plan.renter == request.user %}
+                                            ({{ plan.start_date }} - {{ plan.end_date }})
+                                        {% endif %}
+                                    {% endfor %}
+                                </p>
+                                <span class="text-sm font-medium text-green-600">
+                                    Status: {% for plan in rental.rentalplan_set.all %}
+                                        {% if plan.renter == request.user %}
+                                            {{ plan.is_active|yesno:"Active,Inactive" }}
+                                        {% endif %}
+                                    {% endfor %}
+                                </span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p class="text-gray-500 italic">No rentals found.</p>
+                {% endif %}
+            </div>
+            
+            <!-- Payment History -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">Payment History</h3>
+                <p class="text-lg font-semibold text-gray-800 mb-4">
+                    Total Payments: Rs {{ total_payment|floatformat:2 }}
+                </p>
+                <canvas id="paymentChart" class="mb-4 rounded-lg"></canvas>
+                {% if payments %}
+                    <ul class="space-y-4">
+                        {% for payment in payments %}
+                            <li class="border-b border-gray-200 pb-4 text-gray-700">
+                                <strong class="text-gray-900 text-lg">Rs {{ payment.amount_due|floatformat:2 }}</strong>
+                                <p class="text-sm text-gray-500">for <strong>{{ payment.item.name }}</strong></p>
+                                <span class="text-sm font-medium text-blue-600">
+                                    Paid on: {{ payment.last_payment_date|default:"Pending" }}
+                                </span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p class="text-gray-500 italic">No payments found.</p>
+                {% endif %}
+            </div>
+            
+            <!-- Saved Listings -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">Saved Listings</h3>
+                {% if saved_listings %}
+                    <ul class="space-y-4">
+                        {% for listing in saved_listings %}
+                            <li class="border-b border-gray-200 pb-4 flex justify-between items-center text-gray-700">
+                                <span class="text-lg">{{ listing.name }}</span>
+                                <a href="{% url 'listing_detail' listing.id %}" 
+                                   class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
+                                    View
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p class="text-gray-500 italic">No saved listings.</p>
+                {% endif %}
+            </div>
+            
+            <!-- Profile & Settings -->
+            <div class="bg-white p-6 rounded-xl shadow-md md:col-span-2 lg:col-span-3 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">Profile & Settings</h3>
+                <p class="text-gray-700">
+                    <strong class="text-gray-900">Email:</strong> {{ request.user.email }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var ctx = document.getElementById('paymentChart').getContext('2d');
+        var paymentChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [{% for payment in payments %} "{{ payment.last_payment_date|default:'Pending' }}", {% endfor %}],
+                datasets: [{
+                    label: 'Payment Amount (Rs)',
+                    data: [{% for payment in payments %} {{ payment.amount_due }}, {% endfor %}],
+                    backgroundColor: 'rgba(59, 130, 246, 0.6)',
+                    borderColor: 'rgba(59, 130, 246, 1)',
+                    borderWidth: 1,
+                    hoverBackgroundColor: 'rgba(59, 130, 246, 0.8)',
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            font: {
+                                size: 14,
+                                family: "'Inter', sans-serif",
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)',
+                        },
+                        ticks: {
+                            font: {
+                                size: 12,
+                                family: "'Inter', sans-serif",
+                            }
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false,
+                        },
+                        ticks: {
+                            font: {
+                                size: 12,
+                                family: "'Inter', sans-serif",
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+
+    canvas {
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* General form styling */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Form label styling */
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        /* Input field styling */
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #4C9CFE;
+            outline: none;
+        }
+
+        /* Updated Login button styling */
+        .login-btn {
+            background-color: #ef4444; /* Red-500 */
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 9999px; /* Fully rounded */
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #dc2626; /* Red-600 */
+            transform: scale(1.05);
+        }
+
+        /* Forgot password link styling */
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #4C9CFE;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <form method="post">
+        {% csrf_token %}
+        <h2>Login</h2>
+
+        <div class="mb-4">
+            <label for="username">Username</label>
+            {{ form.username }}
+        </div>
+
+        <div class="mb-6">
+            <label for="password">Password</label>
+            {{ form.password }}
+        </div>
+        {% if messages %}
+            <div style="color: red; text-align: center; margin-bottom: 10px;">
+                {% for message in messages %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="flex justify-center mt-6">
+            <button type="submit" class="login-btn">Login</button>
+        </div>
+
+        <div class="mt-4 text-center">
+            <p style="font-size: 14px; color: #606770; margin: 0;">
+                Don't have an account? 
+                <a href="{% url 'register' %}" style="color: #1877F2; text-decoration: none; font-weight: 600;">
+                    Register
+                </a>
+            </p>
+        </div>
+
+        <div class="mt-4 text-center">
+            <a href="{% url 'password_reset' %}" class="forgot-password">Forgot your password?</a>
+        </div>
+    </form>
+</body>
+</html>

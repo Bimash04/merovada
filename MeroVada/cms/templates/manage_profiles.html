@@ -1,0 +1,50 @@
+<!-- D:\final year\project\FinalYearProject\MeroVada\cms\templates\manage_profiles.html -->
+{% extends 'base.html' %}
+{% block title %}Manage Profiles{% endblock %}
+{% block body %}
+    <h2>Manage Profiles</h2>
+
+    <!-- Display Messages -->
+    {% if messages %}
+        <div style="text-align: center; margin-bottom: 20px;">
+            {% for message in messages %}
+                <p style="color: {% if message.tags == 'success' %}green{% else %}red{% endif %};">
+                    {{ message }}
+                </p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <a href="{% url 'create_profile' %}" class="btn">Create New Profile</a>
+    <table>
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Profile Picture</th>
+                <th>Verification Token</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for profile in all_profiles %}
+                <tr>
+                    <td>{{ profile.user.username }}</td>
+                    <td>
+                        {% if profile.profile_picture %}
+                            <img src="{{ profile.profile_picture.url }}" alt="Profile Picture" style="max-width: 50px; max-height: 50px;">
+                        {% else %}
+                            N/A
+                        {% endif %}
+                    </td>
+                    <td>{{ profile.verification_token|default:"N/A" }}</td>
+                    <td class="action-buttons">
+                        <a href="{% url 'update_profile' profile.id %}" class="edit">Edit</a>
+                        <a href="{% url 'delete_profile' profile.id %}" class="delete">Delete</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr><td colspan="4">No profiles available</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

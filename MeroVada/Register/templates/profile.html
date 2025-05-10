@@ -1,0 +1,18 @@
+{% extends "layout/base.html" %}
+
+{% block body %}
+    <h2>User Profile</h2>
+
+    {% if profile.profile_picture and profile.profile_picture.url %}
+    <img src="{{ profile.profile_picture.url }}" alt="Profile Picture" width="150">
+{% else %}
+    <img src="/media/profile_pics/default_profile.jpg" alt="Default Profile" width="150">
+{% endif %}
+
+
+    <p>Username: {{ profile.user.username }}</p>
+    <p>Email: {{ profile.user.email }}</p>
+
+    <a href="{% url 'profile_update' %}">Edit Profile</a>
+    <a href="{% url 'profile_delete' %}" onclick="return confirm('Are you sure?')">Delete Profile</a>
+{% endblock %}

@@ -1,0 +1,32 @@
+<!-- D:\final year\project\FinalYearProject\MeroVada\cms\templates\manage_blogs.html -->
+{% extends 'base.html' %}
+{% block title %}Manage Blogs{% endblock %}
+{% block body %}
+    <h2>Manage Blogs</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Created At</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for blog in all_blogs %}
+                <tr>
+                    <td>{{ blog.title }}</td>
+                    <td>{{ blog.author.username }}</td>
+                    <td>{{ blog.created_at|date:"Y-m-d" }}</td>
+                    <td class="action-buttons">
+                        <!-- Add Edit/Delete links when views are implemented -->
+                        <a href="#" class="edit">Edit</a>
+                        <a href="#" class="delete">Delete</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr><td colspan="4">No blogs available</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

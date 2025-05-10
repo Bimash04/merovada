@@ -1,0 +1,44 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+<div class="flex h-screen">
+  <!-- Left Sidebar: Conversation List -->
+  <div class="w-1/3 border-r border-gray-300 p-4 overflow-y-auto">
+    <h2 class="text-2xl font-semibold mb-4">Messages</h2>
+    <ul id="chat-list" class="space-y-4">
+      {% for partner in partners %}
+      <li class="flex items-center p-2 rounded-lg hover:bg-gray-100 cursor-pointer" data-partner-id="{{ partner.id }}">
+        <img src="{{ partner.profile_picture.url }}" alt="{{ partner.username }}" class="w-12 h-12 rounded-full">
+        <div class="ml-4">
+          <p class="text-lg font-medium">{{ partner.username }}</p>
+          <p class="text-sm text-gray-500">{{ partner.last_message }}</p>
+        </div>
+      </li>
+      {% empty %}
+      <li>No conversations yet.</li>
+      {% endfor %}
+    </ul>
+  </div>
+  
+  <!-- Right Chat Panel -->
+  <div id="chat-container" class="w-2/3 p-4 flex flex-col">
+    <div class="flex-grow flex items-center justify-center">
+      <p class="text-gray-500">Select a chat to start messaging</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('#chat-list li[data-partner-id]').forEach(item => {
+    item.addEventListener('click', function(){
+      const partnerId = this.getAttribute('data-partner-id');
+      fetch(`/chat/${partnerId}/`)
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('chat-container').innerHTML = html;
+        })
+        .catch(error => console.error("Error loading conversation:", error));
+    });
+  });
+</script>
+{% endblock %}

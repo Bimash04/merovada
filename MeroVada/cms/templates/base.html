@@ -1,0 +1,280 @@
+<!-- D:\final year\project\FinalYearProject\MeroVada\cms\templates\base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MeroVada{% endblock %}</title>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', 'Arial', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background: #2c3e50;
+            color: #fff;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            transition: width 0.3s ease;
+        }
+
+        .sidebar .brand {
+            font-size: 24px;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sidebar .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            flex-grow: 1;
+        }
+
+        .sidebar a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            transition: background 0.2s ease;
+        }
+
+        .sidebar a i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .sidebar a:hover {
+            background: #34495e;
+        }
+
+        .sidebar a.active {
+            background: #3498db;
+        }
+
+        .sidebar .logout {
+            background: #e74c3c;
+            margin: 20px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 250px;
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 60px;
+            }
+
+            .sidebar .brand,
+            .sidebar a span {
+                display: none;
+            }
+
+            .sidebar a i {
+                margin-right: 0;
+            }
+
+            .main-content {
+                margin-left: 60px;
+            }
+        }
+
+        /* Rest of your existing styles (adjusted for compatibility) */
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            color: #fff;
+            transition: transform 0.2s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card.red { background: #ff4d4f; }
+        .stat-card.yellow { background: #fadb14; }
+        .stat-card.green { background: #52c41a; }
+        .stat-card.blue { background: #1890ff; }
+
+        .stat-card h3 {
+            margin: 0 0 10px;
+            font-size: 24px;
+        }
+
+        .stat-card p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .charts-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .chart-card {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .chart-card h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        /* Form Styling */
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form input,
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background: #3498db;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        form button:hover {
+            background: #2980b9;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .action-buttons a {
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .action-buttons .edit { background: #3498db; }
+        .action-buttons .delete { background: #e74c3c; }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <a href="{% url 'dashboard' %}" class="brand">MeroVada Admin</a>
+        <div class="nav-links">
+            <a href="{% url 'dashboard' %}"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a>
+            <a href="{% url 'manage_items' %}"><i class="fas fa-box"></i> <span>Items</span></a>
+            <a href="{% url 'add_about_us' %}"><i class="fas fa-image"></i> <span>About Us</span></a>
+            <a href="{% url 'manage_users' %}"><i class="fas fa-users"></i> <span>Users</span></a>
+            <a href="{% url 'add_benefit' %}"><i class="fas fa-user-circle"></i> <span>Add Benefit</span></a>
+            <a href="{% url 'manage_reviews' %}"><i class="fas fa-star"></i> <span>Reviews</span></a>
+            <a href="{% url 'manage_notifications' %}"><i class="fas fa-bell"></i> <span>Notifications</span></a>
+            <a href="{% url 'manage_rental_plans' %}"><i class="fas fa-calendar-alt"></i> <span>Rental Plans</span></a>
+            <a href="{% url 'add_culture' %}"><i class="fas fa-shopping-cart"></i> <span>Add Culture</span></a>
+            <a href="{% url 'post_job' %}"><i class="fas fa-book"></i> <span>Jobs</span></a>
+            <a href="{% url 'edit_about_us' %}"><i class="fas fa-book"></i> <span>Edit About Us</span></a>
+            <a href="{% url 'admin_logout' %}" class="logout"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+{% extends 'layout/base.html' %}
+
+{% block body %}
+<div class="flex min-h-[calc(100vh-4rem)] bg-gray-100">
+    <!-- Left sidebar - Conversations list -->
+    <div class="w-1/3 border-r border-gray-200 bg-white overflow-y-auto">
+        <div class="p-4 border-b border-gray-200">
+            <h2 class="text-xl font-semibold text-red-600">Chats</h2>
+            <div class="mt-2 relative">
+                <input type="text" id="search-input" placeholder="Search Name" class="w-full p-2 pl-8 rounded-lg bg-gray-100 border-none focus:ring-2 focus:ring-red-500 text-gray-700 placeholder-gray-500" />
+                <svg class="absolute left-2 top-3 h-4 w-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <ul id="chat-list" class="divide-y divide-gray-200">
+            {% for partner in partners %}
+            <li class="hover:bg-red-50 transition duration-200 ease-in-out">
+                <a href="{% url 'chat_room' partner.id %}" class="flex items-center p-4">
+                    <div class="flex-shrink-0">
+                        {% if partner.profile_picture.url %}
+                            <img src="{{ partner.profile_picture.url }}" alt="{{ partner.username }}" class="w-12 h-12 rounded-full">
+                        {% else %}
+                            <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-medium">
+                                {{ partner.username|slice:":1"|upper }}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="ml-4 flex-1 min-w-0">
+                        <p class="text-base font-medium text-gray-900 truncate">{{ partner.username }}</p>
+                        <p class="text-sm text-gray-500 truncate">
+                            {% with last_message=chats|dictsortreversed:"timestamp"|first %}
+                                {% if last_message and last_message.sender == request.user and last_message.receiver == partner or last_message.sender == partner and last_message.receiver == request.user %}
+                                    {% if last_message.sender == request.user %}
+                                        You: {{ last_message.message|truncatechars:20 }}
+                                    {% else %}
+                                        {{ last_message.message|truncatechars:20 }}
+                                    {% endif %}
+                                {% else %}
+                                    Start a conversation...
+                                {% endif %}
+                            {% endwith %}
+                        </p>
+                    </div>
+                    <div class="ml-2 text-xs text-red-600">
+                        {% with last_message=chats|dictsortreversed:"timestamp"|first %}
+                            {% if last_message and last_message.sender == request.user and last_message.receiver == partner or last_message.sender == partner and last_message.receiver == request.user %}
+                                {{ last_message.timestamp|timesince }} ago
+                            {% endif %}
+                        {% endwith %}
+                    </div>
+                </a>
+            </li>
+            {% empty %}
+            <li class="py-6 text-center text-gray-500">
+                <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+                <p class="mt-2">No conversations yet. Start a chat!</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Right side - Chat window -->
+    <div class="flex-1 flex flex-col">
+        {% if other_user %}
+        <div class="flex-1 flex flex-col">
+            <!-- Chat header -->
+            <div class="border-b border-gray-200 p-4 flex items-center bg-white">
+                <div class="flex-shrink-0">
+                    {% if other_user.profile_picture.url %}
+                        <img src="{{ other_user.profile_picture.url }}" alt="{{ other_user.username }}" class="w-10 h-10 rounded-full">
+                    {% else %}
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-medium">
+                            {{ other_user.username|slice:":1"|upper }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="ml-3">
+                    <p class="text-sm font-medium text-gray-900">{{ other_user.username }}</p>
+                    <p class="text-xs text-gray-500">Online</p>
+                </div>
+            </div>
+
+            <!-- Chat messages -->
+            <div id="chat-box" class="flex-1 overflow-y-auto p-4 bg-gray-50">
+                {% for chat in chats %}
+                    <div class="flex {% if chat.sender == request.user %}justify-end{% else %}justify-start{% endif %} mb-4">
+                        {% if chat.sender != request.user %}
+                            <img src="{{ chat.sender.profile_picture.url }}" alt="" class="w-8 h-8 rounded-full mr-2">
+                        {% endif %}
+                        <div class="max-w-xs p-3 rounded-lg {% if chat.sender == request.user %}bg-blue-500 text-white{% else %}bg-white text-black shadow{% endif %}">
+                            <p>{{ chat.message }}</p>
+                            <small class="block text-xs {% if chat.sender == request.user %}text-blue-100{% else %}text-gray-400{% endif %}">
+                                {{ chat.timestamp|time }}
+                            </small>
+                        </div>
+                    </div>
+                {% empty %}
+                    <div class="h-full flex items-center justify-center">
+                        <p class="text-gray-500">No messages yet. Start the conversation!</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <!-- Message input -->
+            <div class="border-t border-gray-200 p-4 bg-white sticky bottom-0 z-10">
+                <form id="chat-form" class="flex items-center">
+                    <button type="button" class="p-2 text-gray-500 hover:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="p-2 text-gray-500 hover:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                        </svg>
+                    </button>
+                    <input type="text" id="message" placeholder="Type a message..." class="flex-1 mx-2 p-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="p-2 text-blue-500 hover:text-blue-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        {% else %}
+        <div class="flex-1 flex items-center justify-center bg-gray-50">
+            <div class="text-center">
+                <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+                <h3 class="mt-2 text-lg font-medium text-gray-900">No chat selected</h3>
+                <p class="mt-1 text-gray-500">Select a conversation from the list to start chatting</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- AJAX Search Script -->
+<script>
+    const searchInput = document.getElementById('search-input');
+    const chatList = document.getElementById('chat-list');
+
+    searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.trim();
+
+        // Send AJAX request
+        fetch(`/chat/?search=${encodeURIComponent(searchTerm)}`, {
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Clear the current chat list
+            chatList.innerHTML = '';
+
+            // If no partners found, show empty state
+            if (data.partners.length === 0) {
+                chatList.innerHTML = `
+                    <li class="py-6 text-center text-gray-500">
+                        <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                        <p class="mt-2">No conversations found.</p>
+                    </li>
+                `;
+                return;
+            }
+
+            // Populate the chat list with filtered partners
+            data.partners.forEach(partner => {
+                const profilePic = partner.profile_picture
+                    ? `<img src="${partner.profile_picture}" alt="${partner.username}" class="w-12 h-12 rounded-full">`
+                    : `<div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-medium">
+                        ${partner.username.charAt(0).toUpperCase()}
+                    </div>`;
+
+                const lastMessageText = partner.last_message.message.length > 20
+                    ? partner.last_message.message.substring(0, 20) + '...'
+                    : partner.last_message.message;
+
+                const messagePreview = partner.last_message.message === "Start a conversation..."
+                    ? lastMessageText
+                    : (partner.last_message.is_sender ? `You: ${lastMessageText}` : lastMessageText);
+
+                const timestamp = partner.last_message.timestamp
+                    ? new Date(partner.last_message.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+                    : '';
+
+                chatList.innerHTML += `
+                    <li class="hover:bg-red-50 transition duration-200 ease-in-out">
+                        <a href="{% url 'chat_room' 0 %}".replace('0', partner.id) class="flex items-center p-4">
+                            <div class="flex-shrink-0">
+                                ${profilePic}
+                            </div>
+                            <div class="ml-4 flex-1 min-w-0">
+                                <p class="text-base font-medium text-gray-900 truncate">${partner.username}</p>
+                                <p class="text-sm text-gray-500 truncate">${messagePreview}</p>
+                            </div>
+                            <div class="ml-2 text-xs text-red-600">
+                                ${timestamp}
+                            </div>
+                        </a>
+                    </li>
+                `;
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching search results:', error);
+        });
+    });
+</script>
+
+{% if room_id %}
+<script>
+    const chatBox = document.getElementById("chat-box");
+    const messageInput = document.getElementById("message");
+    const chatForm = document.getElementById("chat-form");
+
+    // Use the computed room ID from the view context
+    const roomId = "{{ room_id }}";
+
+    // Establish the WebSocket connection
+    const chatSocket = new WebSocket(`ws://${window.location.host}/ws/chat/${roomId}/`);
+
+    chatSocket.onmessage = function(event) {
+        const data = JSON.parse(event.data);
+        const message = data.message;
+        const sender = data.username;
+        const alignment = sender === "{{ request.user.username }}" ? "justify-end" : "justify-start";
+        const bgColor = sender === "{{ request.user.username }}" ? "bg-blue-500 text-white" : "bg-white shadow";
+        const textColor = sender === "{{ request.user.username }}" ? "text-blue-100" : "text-gray-400";
+        const profilePic = sender === "{{ request.user.username }}" ? "" : `<img src="{{ other_user.profile_picture.url }}" class="w-8 h-8 rounded-full mr-2">`;
+        
+        // Append the new message to the chat box
+        const now = new Date();
+        const timeString = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+        
+        chatBox.innerHTML += `
+            <div class="flex ${alignment} mb-4">
+                ${profilePic}
+                <div class="max-w-xs p-3 rounded-lg ${bgColor}">
+                    <p>${message}</p>
+                    <small class="block text-xs ${textColor}">${timeString}</small>
+                </div>
+            </div>
+        `;
+        chatBox.scrollTop = chatBox.scrollHeight;
+    };
+
+    chatForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const message = messageInput.value.trim();
+        if (message) {
+            chatSocket.send(JSON.stringify({ message: message }));
+            messageInput.value = "";
+        }
+    });
+
+    messageInput.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            chatForm.dispatchEvent(new Event("submit"));
+        }
+    });
+</script>
+{% endif %}
+{% endblock %}

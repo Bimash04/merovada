@@ -1,0 +1,52 @@
+<!-- D:\final year\project\FinalYearProject\MeroVada\cms\templates\manage_rental_plans.html -->
+{% extends 'base.html' %}
+{% block title %}Manage Rental Plans{% endblock %}
+{% block body %}
+    <h2>Manage Rental Plans</h2>
+
+    <!-- Display Messages -->
+    {% if messages %}
+        <div style="text-align: center; margin-bottom: 20px;">
+            {% for message in messages %}
+                <p style="color: {% if message.tags == 'success' %}green{% else %}red{% endif %};">
+                    {{ message }}
+                </p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% comment %} <a href="{% url 'create_rental_plan' %}" class="btn">Create New Rental Plan</a> {% endcomment %}
+    <table>
+        <thead>
+            <tr>
+                <th>Renter</th>
+                <th>Item</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Payment Frequency</th>
+                <th>Amount Due</th>
+                <th>Active</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for plan in all_rental_plans %}
+                <tr>
+                    <td>{{ plan.renter.username }}</td>
+                    <td>{{ plan.item.name }}</td>
+                    <td>{{ plan.start_date|date:"Y-m-d" }}</td>
+                    <td>{{ plan.end_date|date:"Y-m-d" }}</td>
+                    <td>{{ plan.payment_frequency }}</td>
+                    <td>{{ plan.amount_due }}</td>
+                    <td>{{ plan.is_active|yesno:"Yes,No" }}</td>
+                    <td class="action-buttons">
+                        {% comment %} <a href="{% url 'update_rental_plan' plan.id %}" class="edit">Edit</a>
+                        <a href="{% url 'delete_rental_plan' plan.id %}" class="delete">Delete</a> {% endcomment %}
+                    </td>
+                </tr>
+            {% empty %}
+                <tr><td colspan="8">No rental plans available</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

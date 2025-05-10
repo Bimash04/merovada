@@ -1,0 +1,30 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block title %}Edit Notification{% endblock %}
+
+{% block body %}
+<section class="p-12 mt-28 max-w-2xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">Edit Notification</h1>
+    
+    <form method="POST">
+        {% csrf_token %}
+        <div class="space-y-4">
+            <textarea 
+                name="message" 
+                class="w-full p-4 border rounded-lg"
+                rows="4"
+            >{{ notification.message }}</textarea>
+            
+            <div class="flex gap-4">
+                <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-lg">
+                    Save Changes
+                </button>
+                <a href="{% url 'notifications' %}" class="px-4 py-2 border rounded-lg">
+                    Cancel
+                </a>
+            </div>
+        </div>
+    </form>
+</section>
+{% endblock %}

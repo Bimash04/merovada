@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Confirmation</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        h2 { color: #333; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Payment Confirmation</h2>
+        <p>Dear {{ renter.username }},</p>
+        <p>Thank you for your payment. Below are the details of your order:</p>
+        <ul>
+            <li><strong>Order ID:</strong> {{ order_id }}</li>
+            <li><strong>Item:</strong> {{ item.name }}</li>
+            <li><strong>Quantity:</strong> {{ quantity }}</li>
+            <li><strong>Total Amount:</strong> Rs {{ total_price }}</li>
+            <li><strong>Rental Plan:</strong> {{ payment_frequency|title }} ({{ rental_duration }} days)</li>
+            <li><strong>Start Date:</strong> {{ start_date|date:"F d, Y" }}</li>
+            <li><strong>End Date:</strong> {{ end_date|date:"F d, Y" }}</li>
+            <li><strong>Transaction ID:</strong> {{ transaction_id|default:"N/A" }}</li>
+        </ul>
+        <p>Please find the attached PDF invoice for your records.</p>
+        <p>Thank you for choosing MeroVada!</p>
+    </div>
+</body>
+</html>
