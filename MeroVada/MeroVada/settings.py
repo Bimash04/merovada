@@ -15,6 +15,7 @@ pymysql.install_as_MySQLdb()
 import os
 from pathlib import Path
 
+import dj_database_url
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -177,20 +178,26 @@ EMAIL_HOST_PASSWORD = 'wjxq jbpm lfbf fcgd'
 DEFAULT_FROM_EMAIL = 'MeroVada <your-email@gmail.com>'
 
 
-# Database Connection
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'MeroVada',  
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',  
-        'PORT': '3306',  
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
-    }
+    "default": dj_database_url.config(
+        default=os.environ.get("DATABASE_URL"), conn_max_age=600
+    )
 }
+# # Database Connection
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'MeroVada',  
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST': '127.0.0.1',  
+#         'PORT': '3306',  
+#         'OPTIONS': {
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+#         }
+#     }
+# }
 
 
 
